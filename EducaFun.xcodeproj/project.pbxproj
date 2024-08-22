@@ -11,6 +11,8 @@
 		E813C7292C77853E00167B49 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E813C7282C77853E00167B49 /* ContentView.swift */; };
 		E813C72B2C77853F00167B49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E813C72A2C77853F00167B49 /* Assets.xcassets */; };
 		E813C72E2C77853F00167B49 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E813C72D2C77853F00167B49 /* Preview Assets.xcassets */; };
+		E813C7372C7794BA00167B49 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E813C7362C7794BA00167B49 /* RegisterView.swift */; };
+		E813C7392C7796A700167B49 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E813C7382C7796A700167B49 /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		E813C7282C77853E00167B49 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E813C72A2C77853F00167B49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E813C72D2C77853F00167B49 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E813C7362C7794BA00167B49 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		E813C7382C7796A700167B49 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,9 +56,11 @@
 			isa = PBXGroup;
 			children = (
 				E813C7262C77853E00167B49 /* EducaFunApp.swift */,
+				E813C7382C7796A700167B49 /* LoginView.swift */,
 				E813C7282C77853E00167B49 /* ContentView.swift */,
 				E813C72A2C77853F00167B49 /* Assets.xcassets */,
 				E813C72C2C77853F00167B49 /* Preview Content */,
+				E813C7362C7794BA00167B49 /* RegisterView.swift */,
 			);
 			path = EducaFun;
 			sourceTree = "<group>";
@@ -138,6 +144,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E813C7292C77853E00167B49 /* ContentView.swift in Sources */,
+				E813C7372C7794BA00167B49 /* RegisterView.swift in Sources */,
+				E813C7392C7796A700167B49 /* LoginView.swift in Sources */,
 				E813C7272C77853E00167B49 /* EducaFunApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
