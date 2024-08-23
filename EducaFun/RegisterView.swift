@@ -38,19 +38,20 @@ struct RegisterView: View {
               .frame(width: 800, height: 700)
               .offset(x: 50, y: 400)
               
-              
-              Circle()
-                   .fill(Color(customblue).opacity(0.7))
-               .frame(width: 60, height: 100)
-               .offset(x: -50, y: 3)
-              Circle()
-                   .fill(Color(customblue).opacity(0.7))
-               .frame(width: 90, height: 100)
-               .offset(x: 80, y: 3)
-              Circle()
-                   .fill(Color(customblue).opacity(0.7))
-               .frame(width: 70, height: 100)
-               .offset(x: 10, y: 3)
+              Button{
+                  //Register Button
+              } label: {
+                  ZStack{
+                      Rectangle()
+                          .foregroundColor(Color(customblue))
+                          .frame(width:300, height:55)
+                          .clipShape(.rect(cornerRadius: 65))
+                          .shadow(radius: 6)
+                      Text("Sign Up")
+                          .foregroundColor(.white)
+                          .bold()
+                  }
+              }
           }
           VStack{
               Text("Registration")
