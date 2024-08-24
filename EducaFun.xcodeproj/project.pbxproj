@@ -13,6 +13,13 @@
 		E813C72E2C77853F00167B49 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E813C72D2C77853F00167B49 /* Preview Assets.xcassets */; };
 		E813C7372C7794BA00167B49 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E813C7362C7794BA00167B49 /* RegisterView.swift */; };
 		E813C7392C7796A700167B49 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E813C7382C7796A700167B49 /* LoginView.swift */; };
+		E813C7402C799FAD00167B49 /* LoginViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E813C73F2C799FAD00167B49 /* LoginViewExtensions.swift */; };
+		E813C7432C79A02D00167B49 /* LoginViewViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E813C7422C79A02D00167B49 /* LoginViewViewModifiers.swift */; };
+		E813C7462C79A22800167B49 /* RegisterViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E813C7452C79A22800167B49 /* RegisterViewExtensions.swift */; };
+		E813C7482C79A24900167B49 /* RegisterViewViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E813C7472C79A24900167B49 /* RegisterViewViewModifiers.swift */; };
+		E813C74A2C79A27B00167B49 /* LoginViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E813C7492C79A27B00167B49 /* LoginViewViewModel.swift */; };
+		E813C74C2C79A28600167B49 /* RegisterViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E813C74B2C79A28600167B49 /* RegisterViewViewModel.swift */; };
+		E813C74F2C79A3EC00167B49 /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E813C74E2C79A3EC00167B49 /* CustomColors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +30,13 @@
 		E813C72D2C77853F00167B49 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E813C7362C7794BA00167B49 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		E813C7382C7796A700167B49 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		E813C73F2C799FAD00167B49 /* LoginViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewExtensions.swift; sourceTree = "<group>"; };
+		E813C7422C79A02D00167B49 /* LoginViewViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewViewModifiers.swift; sourceTree = "<group>"; };
+		E813C7452C79A22800167B49 /* RegisterViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewExtensions.swift; sourceTree = "<group>"; };
+		E813C7472C79A24900167B49 /* RegisterViewViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewViewModifiers.swift; sourceTree = "<group>"; };
+		E813C7492C79A27B00167B49 /* LoginViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewViewModel.swift; sourceTree = "<group>"; };
+		E813C74B2C79A28600167B49 /* RegisterViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewViewModel.swift; sourceTree = "<group>"; };
+		E813C74E2C79A3EC00167B49 /* CustomColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,12 +69,13 @@
 		E813C7252C77853E00167B49 /* EducaFun */ = {
 			isa = PBXGroup;
 			children = (
+				E813C73D2C799F6600167B49 /* Helper */,
+				E813C73C2C799F1200167B49 /* Models */,
+				E813C73B2C799F0B00167B49 /* ViewModels */,
+				E813C73A2C799F0500167B49 /* Views */,
 				E813C7262C77853E00167B49 /* EducaFunApp.swift */,
-				E813C7382C7796A700167B49 /* LoginView.swift */,
-				E813C7282C77853E00167B49 /* ContentView.swift */,
 				E813C72A2C77853F00167B49 /* Assets.xcassets */,
 				E813C72C2C77853F00167B49 /* Preview Content */,
-				E813C7362C7794BA00167B49 /* RegisterView.swift */,
 			);
 			path = EducaFun;
 			sourceTree = "<group>";
@@ -71,6 +86,68 @@
 				E813C72D2C77853F00167B49 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E813C73A2C799F0500167B49 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E813C7282C77853E00167B49 /* ContentView.swift */,
+				E813C7362C7794BA00167B49 /* RegisterView.swift */,
+				E813C7382C7796A700167B49 /* LoginView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E813C73B2C799F0B00167B49 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E813C7492C79A27B00167B49 /* LoginViewViewModel.swift */,
+				E813C74B2C79A28600167B49 /* RegisterViewViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E813C73C2C799F1200167B49 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E813C73D2C799F6600167B49 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				E813C74D2C79A3E100167B49 /* Customs */,
+				E813C7412C799FED00167B49 /* ViewModifiers */,
+				E813C73E2C799F6B00167B49 /* Extensions */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		E813C73E2C799F6B00167B49 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E813C73F2C799FAD00167B49 /* LoginViewExtensions.swift */,
+				E813C7452C79A22800167B49 /* RegisterViewExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E813C7412C799FED00167B49 /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				E813C7422C79A02D00167B49 /* LoginViewViewModifiers.swift */,
+				E813C7472C79A24900167B49 /* RegisterViewViewModifiers.swift */,
+			);
+			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
+		E813C74D2C79A3E100167B49 /* Customs */ = {
+			isa = PBXGroup;
+			children = (
+				E813C74E2C79A3EC00167B49 /* CustomColors.swift */,
+			);
+			path = Customs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,10 +220,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E813C74C2C79A28600167B49 /* RegisterViewViewModel.swift in Sources */,
 				E813C7292C77853E00167B49 /* ContentView.swift in Sources */,
+				E813C7462C79A22800167B49 /* RegisterViewExtensions.swift in Sources */,
+				E813C7402C799FAD00167B49 /* LoginViewExtensions.swift in Sources */,
 				E813C7372C7794BA00167B49 /* RegisterView.swift in Sources */,
+				E813C74F2C79A3EC00167B49 /* CustomColors.swift in Sources */,
+				E813C74A2C79A27B00167B49 /* LoginViewViewModel.swift in Sources */,
 				E813C7392C7796A700167B49 /* LoginView.swift in Sources */,
+				E813C7432C79A02D00167B49 /* LoginViewViewModifiers.swift in Sources */,
 				E813C7272C77853E00167B49 /* EducaFunApp.swift in Sources */,
+				E813C7482C79A24900167B49 /* RegisterViewViewModifiers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
