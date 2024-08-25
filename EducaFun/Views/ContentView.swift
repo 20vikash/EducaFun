@@ -9,7 +9,16 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        LoginView()
+        let vm = ContentViewViewModel()
+        
+        if (vm.isAuthenticated()) {
+            
+            HomePageView()
+
+        } else {
+            LoginView()
+        }
+//        TestView()
     }
 }
 

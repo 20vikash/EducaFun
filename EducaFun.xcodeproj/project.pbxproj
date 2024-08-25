@@ -20,6 +20,15 @@
 		E813C74A2C79A27B00167B49 /* LoginViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E813C7492C79A27B00167B49 /* LoginViewViewModel.swift */; };
 		E813C74C2C79A28600167B49 /* RegisterViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E813C74B2C79A28600167B49 /* RegisterViewViewModel.swift */; };
 		E813C74F2C79A3EC00167B49 /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E813C74E2C79A3EC00167B49 /* CustomColors.swift */; };
+		E813C7512C79AE3B00167B49 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E813C7502C79AE3B00167B49 /* UserModel.swift */; };
+		E813C7562C79D30900167B49 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E813C7552C79D30900167B49 /* KeychainSwift */; };
+		E813C7582C79DF4200167B49 /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E813C7572C79DF4200167B49 /* KeychainManager.swift */; };
+		E813C75A2C79E63800167B49 /* SessionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E813C7592C79E63800167B49 /* SessionModel.swift */; };
+		E813C75C2C79F63600167B49 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E813C75B2C79F63600167B49 /* TestView.swift */; };
+		E813C75E2C79F8E100167B49 /* ContentViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E813C75D2C79F8E100167B49 /* ContentViewViewModel.swift */; };
+		E813C7602C7A009200167B49 /* RefreshTokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E813C75F2C7A009200167B49 /* RefreshTokenModel.swift */; };
+		E813C7622C7A0E6A00167B49 /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E813C7612C7A0E6A00167B49 /* HomePageView.swift */; };
+		E813C7652C7AE84400167B49 /* AlertToast in Frameworks */ = {isa = PBXBuildFile; productRef = E813C7642C7AE84400167B49 /* AlertToast */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +46,13 @@
 		E813C7492C79A27B00167B49 /* LoginViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewViewModel.swift; sourceTree = "<group>"; };
 		E813C74B2C79A28600167B49 /* RegisterViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewViewModel.swift; sourceTree = "<group>"; };
 		E813C74E2C79A3EC00167B49 /* CustomColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColors.swift; sourceTree = "<group>"; };
+		E813C7502C79AE3B00167B49 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		E813C7572C79DF4200167B49 /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
+		E813C7592C79E63800167B49 /* SessionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionModel.swift; sourceTree = "<group>"; };
+		E813C75B2C79F63600167B49 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		E813C75D2C79F8E100167B49 /* ContentViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewViewModel.swift; sourceTree = "<group>"; };
+		E813C75F2C7A009200167B49 /* RefreshTokenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshTokenModel.swift; sourceTree = "<group>"; };
+		E813C7612C7A0E6A00167B49 /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +60,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E813C7562C79D30900167B49 /* KeychainSwift in Frameworks */,
+				E813C7652C7AE84400167B49 /* AlertToast in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +112,8 @@
 				E813C7282C77853E00167B49 /* ContentView.swift */,
 				E813C7362C7794BA00167B49 /* RegisterView.swift */,
 				E813C7382C7796A700167B49 /* LoginView.swift */,
+				E813C75B2C79F63600167B49 /* TestView.swift */,
+				E813C7612C7A0E6A00167B49 /* HomePageView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -103,6 +123,7 @@
 			children = (
 				E813C7492C79A27B00167B49 /* LoginViewViewModel.swift */,
 				E813C74B2C79A28600167B49 /* RegisterViewViewModel.swift */,
+				E813C75D2C79F8E100167B49 /* ContentViewViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -110,6 +131,9 @@
 		E813C73C2C799F1200167B49 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E813C7502C79AE3B00167B49 /* UserModel.swift */,
+				E813C7592C79E63800167B49 /* SessionModel.swift */,
+				E813C75F2C7A009200167B49 /* RefreshTokenModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -146,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				E813C74E2C79A3EC00167B49 /* CustomColors.swift */,
+				E813C7572C79DF4200167B49 /* KeychainManager.swift */,
 			);
 			path = Customs;
 			sourceTree = "<group>";
@@ -166,6 +191,10 @@
 			dependencies = (
 			);
 			name = EducaFun;
+			packageProductDependencies = (
+				E813C7552C79D30900167B49 /* KeychainSwift */,
+				E813C7642C7AE84400167B49 /* AlertToast */,
+			);
 			productName = EducaFun;
 			productReference = E813C7232C77853E00167B49 /* EducaFun.app */;
 			productType = "com.apple.product-type.application";
@@ -194,6 +223,10 @@
 				Base,
 			);
 			mainGroup = E813C71A2C77853E00167B49;
+			packageReferences = (
+				E813C7542C79D30900167B49 /* XCRemoteSwiftPackageReference "keychain-swift" */,
+				E813C7632C7AE84400167B49 /* XCRemoteSwiftPackageReference "AlertToast" */,
+			);
 			productRefGroup = E813C7242C77853E00167B49 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -220,16 +253,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E813C7582C79DF4200167B49 /* KeychainManager.swift in Sources */,
 				E813C74C2C79A28600167B49 /* RegisterViewViewModel.swift in Sources */,
 				E813C7292C77853E00167B49 /* ContentView.swift in Sources */,
 				E813C7462C79A22800167B49 /* RegisterViewExtensions.swift in Sources */,
 				E813C7402C799FAD00167B49 /* LoginViewExtensions.swift in Sources */,
 				E813C7372C7794BA00167B49 /* RegisterView.swift in Sources */,
+				E813C75C2C79F63600167B49 /* TestView.swift in Sources */,
+				E813C75E2C79F8E100167B49 /* ContentViewViewModel.swift in Sources */,
 				E813C74F2C79A3EC00167B49 /* CustomColors.swift in Sources */,
+				E813C7602C7A009200167B49 /* RefreshTokenModel.swift in Sources */,
 				E813C74A2C79A27B00167B49 /* LoginViewViewModel.swift in Sources */,
 				E813C7392C7796A700167B49 /* LoginView.swift in Sources */,
 				E813C7432C79A02D00167B49 /* LoginViewViewModifiers.swift in Sources */,
 				E813C7272C77853E00167B49 /* EducaFunApp.swift in Sources */,
+				E813C7512C79AE3B00167B49 /* UserModel.swift in Sources */,
+				E813C75A2C79E63800167B49 /* SessionModel.swift in Sources */,
+				E813C7622C7A0E6A00167B49 /* HomePageView.swift in Sources */,
 				E813C7482C79A24900167B49 /* RegisterViewViewModifiers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,6 +474,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E813C7542C79D30900167B49 /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/keychain-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 24.0.0;
+			};
+		};
+		E813C7632C7AE84400167B49 /* XCRemoteSwiftPackageReference "AlertToast" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/elai950/AlertToast.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.3.9;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E813C7552C79D30900167B49 /* KeychainSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E813C7542C79D30900167B49 /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			productName = KeychainSwift;
+		};
+		E813C7642C7AE84400167B49 /* AlertToast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E813C7632C7AE84400167B49 /* XCRemoteSwiftPackageReference "AlertToast" */;
+			productName = AlertToast;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E813C71B2C77853E00167B49 /* Project object */;
 }
