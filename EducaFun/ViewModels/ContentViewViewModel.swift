@@ -34,7 +34,7 @@ class ContentViewViewModel: ObservableObject {
                     refreshTokenActive = true
                 }
             } else if dateFromString < currentDate {
-                if tokenFlag == "refresh" {
+                if tokenFlag == "access" {
                     accessTokenActive = false
                 } else if tokenFlag == "refresh" {
                     refreshTokenActive = false
