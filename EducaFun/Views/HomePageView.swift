@@ -42,7 +42,7 @@ struct HomePageView: View{
                         //Image
                         Image("educafun logo")
                             .frame(width: 150, height: 220)
-                            .imaged()
+                            .logoimaged()
                         Spacer()
                         
                         
@@ -115,7 +115,7 @@ struct HomePageView: View{
                     }
                     
                 }
-                .frame(width: 370, height: 422)
+                .frame(width: 370, height: 465)
                 .padding(.vertical, 20)
                 .background( ZStack {
                     // Regular material background
@@ -123,7 +123,7 @@ struct HomePageView: View{
                     Color(customblue).opacity(0.7)
                 })
                 .clipShape(.rect(cornerRadius: 20))
-                .padding(.top, 200)
+                .padding(.top, 280)
                 
             }
             .ignoresSafeArea()
@@ -135,82 +135,7 @@ struct HomePageView: View{
 #Preview {
     HomePageView()
 }
-struct HomeView: View {
-    var body: some View {
-        Text("This is the Home view")
-    }
-}
-struct image: ViewModifier{
-    func body (content: Content) -> some View{
-        content
-            .clipShape(Circle())
-            .overlay(
-                Circle()
-                    .stroke(Color(customblue).opacity(0.6), lineWidth: 7)
-            )
-        //Image Position
-            .padding()
-            .padding(.trailing, -30)
-            .shadow(radius: 5)
-            .frame(width:100, height: 50)
-        
-    }
-}
-
-extension View{
-  func imaged() -> some View{
-      modifier(image())
-  }
-}
-
-struct buttons: ViewModifier{
-    func body (content: Content) -> some View{
-        content
-            .frame(width: 220, height:220)
-            .padding()
-            .padding(.trailing, -30)
-            .shadow(radius: 5)
-    }
-}
-extension View{
-  func buttoned() -> some View{
-      modifier(buttons())
-  }
-}
-
-struct highlight: ViewModifier{
-    func body (content: Content) -> some View{
-        content
-            .padding(.leading, 10)
-            .padding(.trailing, 10)
-            .background(Color(customyellow).opacity(0.9))
-            .clipShape(.capsule)
-            .font(.system(size: 19))
-            .padding(.bottom, 390)
-            .padding(.trailing, 30)
-            .font(.system(size: 20))
-        
-    }
-}
-
-extension View{
-  func highlighted() -> some View{
-      modifier(highlight())
-  }
-}
 
 
-struct capsuleText: View{
-    var text:String
-    var body: some View{
-        Text(text)
-            .font(.system(size: 14))
-            .bold()
-            .padding()
-            .foregroundStyle(.white)
-            .background(Color(customblue).opacity(0.9))
-            .clipShape(.capsule)
-        
-        }
-}
+
 

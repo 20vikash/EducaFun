@@ -21,3 +21,6 @@ struct registerpad: ViewModifier{
           
       }
 }
+
+
+

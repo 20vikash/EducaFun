@@ -11,6 +11,8 @@
 		7F781BE22C8C34A20090E225 /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F781BE12C8C34A20090E225 /* QuizView.swift */; };
 		7F781BE42C8C34BF0090E225 /* ClanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F781BE32C8C34BF0090E225 /* ClanView.swift */; };
 		7F781BE62C8C34DB0090E225 /* EducaAIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F781BE52C8C34DB0090E225 /* EducaAIView.swift */; };
+		7FEB39D52C8C5290006166DE /* HomeViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEB39D42C8C5290006166DE /* HomeViewModifiers.swift */; };
+		7FEB39D72C8C5387006166DE /* HomeViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEB39D62C8C5387006166DE /* HomeViewExtensions.swift */; };
 		E813C7272C77853E00167B49 /* EducaFunApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E813C7262C77853E00167B49 /* EducaFunApp.swift */; };
 		E813C7292C77853E00167B49 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E813C7282C77853E00167B49 /* ContentView.swift */; };
 		E813C72B2C77853F00167B49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E813C72A2C77853F00167B49 /* Assets.xcassets */; };
@@ -40,6 +42,8 @@
 		7F781BE12C8C34A20090E225 /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
 		7F781BE32C8C34BF0090E225 /* ClanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClanView.swift; sourceTree = "<group>"; };
 		7F781BE52C8C34DB0090E225 /* EducaAIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducaAIView.swift; sourceTree = "<group>"; };
+		7FEB39D42C8C5290006166DE /* HomeViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModifiers.swift; sourceTree = "<group>"; };
+		7FEB39D62C8C5387006166DE /* HomeViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewExtensions.swift; sourceTree = "<group>"; };
 		E813C7232C77853E00167B49 /* EducaFun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EducaFun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E813C7262C77853E00167B49 /* EducaFunApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducaFunApp.swift; sourceTree = "<group>"; };
 		E813C7282C77853E00167B49 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -164,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				E813C73F2C799FAD00167B49 /* LoginViewExtensions.swift */,
+				7FEB39D62C8C5387006166DE /* HomeViewExtensions.swift */,
 				E813C7452C79A22800167B49 /* RegisterViewExtensions.swift */,
 			);
 			path = Extensions;
@@ -173,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				E813C7422C79A02D00167B49 /* LoginViewViewModifiers.swift */,
+				7FEB39D42C8C5290006166DE /* HomeViewModifiers.swift */,
 				E813C7472C79A24900167B49 /* RegisterViewViewModifiers.swift */,
 			);
 			path = ViewModifiers;
@@ -274,6 +280,7 @@
 				7F781BE42C8C34BF0090E225 /* ClanView.swift in Sources */,
 				E813C75C2C79F63600167B49 /* TestView.swift in Sources */,
 				E813C75E2C79F8E100167B49 /* ContentViewViewModel.swift in Sources */,
+				7FEB39D52C8C5290006166DE /* HomeViewModifiers.swift in Sources */,
 				E813C74F2C79A3EC00167B49 /* CustomColors.swift in Sources */,
 				7F781BE02C8C325F0090E225 /* FunLabView.swift in Sources */,
 				E813C7602C7A009200167B49 /* RefreshTokenModel.swift in Sources */,
@@ -287,6 +294,7 @@
 				7F781BE22C8C34A20090E225 /* QuizView.swift in Sources */,
 				E813C7622C7A0E6A00167B49 /* HomePageView.swift in Sources */,
 				E813C7482C79A24900167B49 /* RegisterViewViewModifiers.swift in Sources */,
+				7FEB39D72C8C5387006166DE /* HomeViewExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
