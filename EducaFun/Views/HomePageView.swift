@@ -9,8 +9,7 @@ import SwiftUI
 
 struct HomePageView: View{
     //Here Hashable was there
-    @State var nextpage = ""
-    @State var names = ["FunLab", "Quizzes", "Clan War", "EducaFun AI"]
+    let names = ["FunLab", "Quizzes", "Clan War", "EducaFun AI"]
     let options = ["Funlab", "Quiz", "Clans", "EducafunAI"]
     let destinations: [AnyView] = [
         AnyView(FunLabView()), // Replace with the appropriate views
@@ -18,10 +17,7 @@ struct HomePageView: View{
         AnyView(ClanView()),
         AnyView(EducaAIView())
     ]
-    @State private var name = "Meerthika"
-    @State private var profilepic = ""
-    @State private var rank = 10000
-    @State var medals = ["Beginner", "Intermediate", "Advanced", "Legend", "Master"]
+    @StateObject var homevm = HomeViewModel()
     var body: some View {
         NavigationStack{
             ZStack(){
@@ -31,7 +27,7 @@ struct HomePageView: View{
                 VStack(spacing: -40){
                     HStack{
                         ZStack{
-                            Text("Hello \n**\(name)**!")
+                            Text("Hello \n**\(homevm.name)**!")
                                 .font(.system(size: 35))
                                 .frame(width: 200, height: 170)
                                 .padding()
@@ -49,7 +45,7 @@ struct HomePageView: View{
                     }
                     //Rank Identification
                     HStack(spacing: 0){
-                        capsuleText(text: "Rank: \(rank)")
+                        capsuleText(text: "Rank: \(homevm.rank)")
                             .frame(height:10, alignment: .trailing)
                             .padding(.trailing, 50)
                             .padding(.bottom, 350)
