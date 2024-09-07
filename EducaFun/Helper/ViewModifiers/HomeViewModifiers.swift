@@ -59,8 +59,8 @@ struct capsuleText: View{
             .bold()
             .padding()
             .foregroundStyle(.white)
-            .background(Color(customblue).opacity(0.9))
-            .clipShape(.capsule)
+            .background(Color.black.opacity(0.8))
+            .clipShape(.rect(cornerRadius: 20))
         
         }
 }

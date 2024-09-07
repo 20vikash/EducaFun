@@ -10,7 +10,7 @@ import SwiftUI
 struct HomePageView: View{
     //Here Hashable was there
     let names = ["FunLab", "Quizzes", "Clan War", "EducaFun AI"]
-    let options = ["Funlab", "Quiz", "Clans", "EducafunAI"]
+    let imgnames = ["Funlab", "Quiz", "Clans", "EducafunAI"]
     let destinations: [AnyView] = [
         AnyView(FunLabView()), // Replace with the appropriate views
         AnyView(QuizView()),
@@ -51,6 +51,7 @@ struct HomePageView: View{
                             .padding(.bottom, 350)
                             .padding(.trailing,50)
                             .shadow(radius: 5)
+                          
                         
                         //Medal stars can change
                         Image("Beginner")
@@ -67,6 +68,7 @@ struct HomePageView: View{
                 VStack(spacing:0){
                     ZStack{
                         Text("What Do you want to Learn Today?")
+                            .font(.system(size: 20))
                             .highlighted()
                             .padding(.leading, 20)
                         VStack(spacing:-50){
@@ -75,7 +77,7 @@ struct HomePageView: View{
                                     in
                                     NavigationLink(destination:destinations[number]){
                                         VStack(spacing:-30){
-                                            Image(options[number])
+                                            Image(imgnames[number])
                                                 .resizable()
                                                 .buttoned()
                                                 .padding(.bottom, -20)
@@ -94,11 +96,11 @@ struct HomePageView: View{
                                     in
                                     NavigationLink(destination:destinations[number]){
                                         VStack(spacing:-50){
-                                            Image(options[number])
+                                            Image(imgnames[number])
                                                 .resizable()
                                                 .buttoned()
                                             Text("\(names[number])")
-                                                .padding(.leading, 16)
+                                                .padding(.leading, 19)
                                                 .foregroundColor(.black)
                                                 .bold()
                                         }
@@ -131,7 +133,5 @@ struct HomePageView: View{
 #Preview {
     HomePageView()
 }
-
-
 
 
