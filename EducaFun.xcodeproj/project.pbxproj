@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F781BE02C8C325F0090E225 /* FunLabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F781BDF2C8C325F0090E225 /* FunLabView.swift */; };
+		7F781BE22C8C34A20090E225 /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F781BE12C8C34A20090E225 /* QuizView.swift */; };
+		7F781BE42C8C34BF0090E225 /* ClanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F781BE32C8C34BF0090E225 /* ClanView.swift */; };
+		7F781BE62C8C34DB0090E225 /* EducaAIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F781BE52C8C34DB0090E225 /* EducaAIView.swift */; };
 		E813C7272C77853E00167B49 /* EducaFunApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E813C7262C77853E00167B49 /* EducaFunApp.swift */; };
 		E813C7292C77853E00167B49 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E813C7282C77853E00167B49 /* ContentView.swift */; };
 		E813C72B2C77853F00167B49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E813C72A2C77853F00167B49 /* Assets.xcassets */; };
@@ -32,6 +36,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7F781BDF2C8C325F0090E225 /* FunLabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunLabView.swift; sourceTree = "<group>"; };
+		7F781BE12C8C34A20090E225 /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
+		7F781BE32C8C34BF0090E225 /* ClanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClanView.swift; sourceTree = "<group>"; };
+		7F781BE52C8C34DB0090E225 /* EducaAIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducaAIView.swift; sourceTree = "<group>"; };
 		E813C7232C77853E00167B49 /* EducaFun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EducaFun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E813C7262C77853E00167B49 /* EducaFunApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducaFunApp.swift; sourceTree = "<group>"; };
 		E813C7282C77853E00167B49 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -114,6 +122,10 @@
 				E813C7382C7796A700167B49 /* LoginView.swift */,
 				E813C75B2C79F63600167B49 /* TestView.swift */,
 				E813C7612C7A0E6A00167B49 /* HomePageView.swift */,
+				7F781BE52C8C34DB0090E225 /* EducaAIView.swift */,
+				7F781BE32C8C34BF0090E225 /* ClanView.swift */,
+				7F781BE12C8C34A20090E225 /* QuizView.swift */,
+				7F781BDF2C8C325F0090E225 /* FunLabView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -259,16 +271,20 @@
 				E813C7462C79A22800167B49 /* RegisterViewExtensions.swift in Sources */,
 				E813C7402C799FAD00167B49 /* LoginViewExtensions.swift in Sources */,
 				E813C7372C7794BA00167B49 /* RegisterView.swift in Sources */,
+				7F781BE42C8C34BF0090E225 /* ClanView.swift in Sources */,
 				E813C75C2C79F63600167B49 /* TestView.swift in Sources */,
 				E813C75E2C79F8E100167B49 /* ContentViewViewModel.swift in Sources */,
 				E813C74F2C79A3EC00167B49 /* CustomColors.swift in Sources */,
+				7F781BE02C8C325F0090E225 /* FunLabView.swift in Sources */,
 				E813C7602C7A009200167B49 /* RefreshTokenModel.swift in Sources */,
 				E813C74A2C79A27B00167B49 /* LoginViewViewModel.swift in Sources */,
 				E813C7392C7796A700167B49 /* LoginView.swift in Sources */,
 				E813C7432C79A02D00167B49 /* LoginViewViewModifiers.swift in Sources */,
 				E813C7272C77853E00167B49 /* EducaFunApp.swift in Sources */,
 				E813C7512C79AE3B00167B49 /* UserModel.swift in Sources */,
+				7F781BE62C8C34DB0090E225 /* EducaAIView.swift in Sources */,
 				E813C75A2C79E63800167B49 /* SessionModel.swift in Sources */,
+				7F781BE22C8C34A20090E225 /* QuizView.swift in Sources */,
 				E813C7622C7A0E6A00167B49 /* HomePageView.swift in Sources */,
 				E813C7482C79A24900167B49 /* RegisterViewViewModifiers.swift in Sources */,
 			);
