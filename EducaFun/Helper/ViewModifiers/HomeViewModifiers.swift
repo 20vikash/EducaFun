@@ -26,7 +26,6 @@ struct logoimage: ViewModifier{
 }
 
 
-
 struct buttons: ViewModifier{
     func body (content: Content) -> some View{
         content
@@ -51,6 +50,7 @@ struct highlight: ViewModifier{
     }
 }
 //CapsuleText -- No extension
+
 struct capsuleText: View{
     var text:String
     var body: some View{
@@ -58,10 +58,9 @@ struct capsuleText: View{
             .font(.system(size: 14))
             .bold()
             .padding()
-            .foregroundStyle(.white)
-            .background(Color.black.opacity(0.8))
+            .foregroundStyle(.black)
+            .background(Color(customyellow).opacity(0.8))
             .clipShape(.rect(cornerRadius: 20))
         
         }
 }
-

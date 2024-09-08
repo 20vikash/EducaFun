@@ -17,17 +17,21 @@ struct HomePageView: View{
         AnyView(ClanView()),
         AnyView(EducaAIView())
     ]
+    @StateObject var loginvm = LoginViewViewModel()
     @StateObject var homevm = HomeViewModel()
     var body: some View {
         NavigationStack{
             ZStack(){
-                Rectangle()
-                    .fill(customyellow.opacity(0.83))
-                    .ignoresSafeArea()
+                RadialGradient(stops: [
+                    .init(color: Color(red: 1.2, green: 0.9, blue: 1.3), location: 0.01),
+                    .init(color: Color(red: 1.1, green: 1.0, blue: 0.16), location: 0.3),
+                ], center: .center, startRadius: 100, endRadius: 1000)
+                
+                .ignoresSafeArea()
                 VStack(spacing: -40){
                     HStack{
                         ZStack{
-                            Text("Hello \n**\(homevm.name)**!")
+                            Text("Hello \n**\(loginvm.userName)**!")
                                 .font(.system(size: 35))
                                 .frame(width: 200, height: 170)
                                 .padding()
@@ -36,7 +40,7 @@ struct HomePageView: View{
                                 .padding(.leading, -80)
                         }
                         //Image
-                        Image("educafun logo")
+                        Image("\(homevm.userimg)")
                             .frame(width: 150, height: 220)
                             .logoimaged()
                         Spacer()
@@ -54,7 +58,7 @@ struct HomePageView: View{
                           
                         
                         //Medal stars can change
-                        Image("Beginner")
+                        Image("\(homevm.usermedal)")
                             .resizable()
                             .frame(width: 90, height: 90)
                             .padding(.trailing, 100)
@@ -118,7 +122,7 @@ struct HomePageView: View{
                 .background( ZStack {
                     // Regular material background
                     Color.clear.background(.regularMaterial)
-                    Color(customblue).opacity(0.7)
+                    Color(customblue).opacity(0.5)
                 })
                 .clipShape(.rect(cornerRadius: 20))
                 .padding(.top, 280)

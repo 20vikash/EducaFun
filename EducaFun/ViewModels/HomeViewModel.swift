@@ -8,10 +8,11 @@
 import SwiftUI
 
 class HomeViewModel: ObservableObject{
-    @Published var name = "Meerthika"
+    @Published var userimg = "Clans"
     @Published var profilepic = ""
     @Published var rank = 10000
     @Published var medals = ["Beginner", "Intermediate", "Advanced", "Legend", "Master"]
+    @Published var usermedal = "Beginner"
     @Published var nextpage = ""
     
     
