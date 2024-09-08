@@ -12,6 +12,7 @@
 		7F781BE42C8C34BF0090E225 /* ClanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F781BE32C8C34BF0090E225 /* ClanView.swift */; };
 		7F781BE62C8C34DB0090E225 /* EducaAIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F781BE52C8C34DB0090E225 /* EducaAIView.swift */; };
 		7F945E912C8CA4200081245F /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F945E902C8CA4200081245F /* HomeViewModel.swift */; };
+		7FBC62B62C8DBE8D004AB1E0 /* MathView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBC62B52C8DBE8D004AB1E0 /* MathView.swift */; };
 		7FEB39D52C8C5290006166DE /* HomeViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEB39D42C8C5290006166DE /* HomeViewModifiers.swift */; };
 		7FEB39D72C8C5387006166DE /* HomeViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEB39D62C8C5387006166DE /* HomeViewExtensions.swift */; };
 		E813C7272C77853E00167B49 /* EducaFunApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E813C7262C77853E00167B49 /* EducaFunApp.swift */; };
@@ -44,6 +45,7 @@
 		7F781BE32C8C34BF0090E225 /* ClanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClanView.swift; sourceTree = "<group>"; };
 		7F781BE52C8C34DB0090E225 /* EducaAIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducaAIView.swift; sourceTree = "<group>"; };
 		7F945E902C8CA4200081245F /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		7FBC62B52C8DBE8D004AB1E0 /* MathView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathView.swift; sourceTree = "<group>"; };
 		7FEB39D42C8C5290006166DE /* HomeViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModifiers.swift; sourceTree = "<group>"; };
 		7FEB39D62C8C5387006166DE /* HomeViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewExtensions.swift; sourceTree = "<group>"; };
 		E813C7232C77853E00167B49 /* EducaFun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EducaFun.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,6 +133,7 @@
 				7F781BE52C8C34DB0090E225 /* EducaAIView.swift */,
 				7F781BE32C8C34BF0090E225 /* ClanView.swift */,
 				7F781BE12C8C34A20090E225 /* QuizView.swift */,
+				7FBC62B52C8DBE8D004AB1E0 /* MathView.swift */,
 				7F781BDF2C8C325F0090E225 /* FunLabView.swift */,
 			);
 			path = Views;
@@ -296,6 +299,7 @@
 				7F781BE62C8C34DB0090E225 /* EducaAIView.swift in Sources */,
 				E813C75A2C79E63800167B49 /* SessionModel.swift in Sources */,
 				7F781BE22C8C34A20090E225 /* QuizView.swift in Sources */,
+				7FBC62B62C8DBE8D004AB1E0 /* MathView.swift in Sources */,
 				E813C7622C7A0E6A00167B49 /* HomePageView.swift in Sources */,
 				E813C7482C79A24900167B49 /* RegisterViewViewModifiers.swift in Sources */,
 				7FEB39D72C8C5387006166DE /* HomeViewExtensions.swift in Sources */,

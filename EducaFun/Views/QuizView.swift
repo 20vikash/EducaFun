@@ -8,12 +8,15 @@
 import SwiftUI
 
 struct QuizView: View {
+    @State private var isSheet = false
     @State var subjects = ["Maths", "Vocabulary", "Science", "Economics"]
     @State private var showPicker = false
     @State var subject = ""
     @State var gamestatus = "Win"
     @State var topscore = 700
     @State var currentscore = 100
+    @State private var selectedSubject: String?
+    @State private var showFullScreenMathView = false
     @StateObject var homevm = HomeViewModel()
     var body: some View {
         NavigationStack{
@@ -62,10 +65,10 @@ struct QuizView: View {
                 .clipShape(.rect(cornerRadius: 90))
                 .padding(.horizontal)
                 .padding(.bottom, 100)
-                
-                VStack(spacing: -40){
+                //change to 60
+                VStack(spacing: -60){
                     Button(action: {
-                        showPicker.toggle()
+                        isSheet = true
                     }) {
                         VStack(spacing: -50){
                             Text("MatchMaker")
@@ -79,26 +82,47 @@ struct QuizView: View {
                                 .ignoresSafeArea()
                         }
                     }
-                    VStack{
-                        if showPicker{
-                            VStack{
-                                Picker("Select", selection: $subject){
-                                    ForEach (subjects , id: \.self){ option in
-                                        Text(option)
-                                            .foregroundStyle(.black)
+                    .sheet(isPresented: $isSheet) {
+                        NavigationStack{
+                            VStack(spacing: -10) {
+                                Text("Select the Subject")
+                                    .font(.title2)
+                                    .background(Color(customyellow).opacity(0.9))
+                                    .clipShape(.capsule)
+                                    .padding(.bottom, 10)
+                                HStack(spacing: -23) {
+                                    ForEach(0..<4) { number in
+                                        Button{
+                                            showFullScreenMathView = true
+                                            
+                                        }label:{
+                                            VStack(spacing: -10) {
+                                                Image(subjects[number])
+                                                    .resizable()
+                                                    .frame(width: 120, height: 120)
+                                                Text("\(subjects[number])")
+                                                    .bold()
+                                                    .font(.system(size: 13))
+                                                    .foregroundStyle(.black)
+                                                    .background(Color(customblue).opacity(0.3))
+                                                    .clipShape(Capsule())
+                                            }
+                                        }
                                     }
                                 }
-                                .pickerStyle(MenuPickerStyle())
                             }
+                        }
+                            .presentationDetents([.fraction(0.3)])
+                           
+                            }
+                    .fullScreenCover(isPresented: $showFullScreenMathView) {
+                        NavigationStack {
+                            MathView()  // MathView appears in full screen
                         }
                         
                     }
-                    .background(Color(customyellow).opacity(0.5))
-                    .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
-                    
                 }
                 .padding(.top, 500)
-                
             }
         }
     }
@@ -107,6 +131,10 @@ struct QuizView: View {
 #Preview {
     QuizView()
 }
+
+//Sheet View
+
+
 
 struct scorepad: ViewModifier{
   func body (content: Content) -> some View{
@@ -165,7 +193,6 @@ struct quizcapsuleText: View{
         
         }
 }
-
 struct quizhighlight: ViewModifier{
     func body (content: Content) -> some View{
         content
@@ -181,6 +208,24 @@ struct quizhighlight: ViewModifier{
 }
 extension View{
   func quizhighlighted() -> some View{
-      modifier(quizhighlight())
+      self.modifier(quizhighlight())
   }
 }
+struct container: ViewModifier{
+    func body (content: Content) -> some View{
+        content
+            .frame(maxWidth :90, maxHeight: 90)
+            .background(Color(customblue).opacity(0.3))
+            .clipShape(.rect(cornerRadius: 90))
+            .padding(.horizontal)
+            .padding(.bottom, 100)
+    }
+}
+extension View{
+  func containerized() -> some View{
+      modifier(container())
+  }
+}
+
+
+

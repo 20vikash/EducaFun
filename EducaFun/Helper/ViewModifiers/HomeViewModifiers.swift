@@ -64,3 +64,4 @@ struct capsuleText: View{
         
         }
 }
+
