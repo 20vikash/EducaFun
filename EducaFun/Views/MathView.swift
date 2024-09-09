@@ -7,42 +7,92 @@
 
 import SwiftUI
 struct MathView: View {
-    @Binding var isPresented: Bool  // Binding to control presentation
+    @Binding var isPresented: Bool// Binding to control presentation
+    @State var options = ["A", "B", "C", "D"]
 
     var body: some View {
         ZStack{
-            
+
+            ZStack {
+                // Circle with background color
+                Circle()
+                    .fill(Color.black)
+                    .frame(width: 70, height: 70)
+                Text("1")
+                    .foregroundColor(.white)
+                    .font(.system(size: 30))
+                    .bold()
+            }
+            .padding(.bottom, 550)
+            .padding(.trailing, 280)
+
+                
+                capsuleText(text: "Timer: 00:00")
+                //Should IMplement timer
+                    .padding(.bottom, 540)
+                    .padding(.leading, 250)
             VStack{
                 VStack{
-                    Text("Maths")
-                        .font(.system(size: 35))
-                        .bold()
-                        .quizhighlighted()
-                    Spacer()
-                    Spacer()
-                    Text("")
+                    VStack{
+                        Text("Maths")
+                            .font(.system(size: 35))
+                            .bold()
+                            .quizhighlighted()
+                        Spacer()
+                        Spacer()
+                    }
+                    VStack{
+                        Button{
+                            
+                        }label:{
+                            Text("Next Question")
+                                .bold()
+                                .foregroundStyle(.black)
+                                .frame(width: 260, height: 70)
+                                .clipShape(Capsule())
+                                    .overlay(
+                                        Capsule()
+                                            .stroke(Color.black.opacity(0.7), lineWidth: 7)
+                                    )
+                                .background(Color(customyellow))
+                                .cornerRadius(50)
+                            
+                        }
+                    }
+                    .padding(.bottom, 70)
                 }
                 
             }
-            VStack(spacing: 15){
+            ZStack{
+                Rectangle()
+                    .fill(Color(customyellow).opacity(0.3))
+                    .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
+            }
+            .padding(.top, 150)
+            .padding(.bottom, 200)
+            VStack(spacing: 25){
                 Text("1. Question is this which is the hoighest thunf in the entire worls i uia iaihfab iafbafgd uiafabavdhyfayfaiuug")
                     .padding()
                     .questionshowed()
-                VStack(spacing: 10){
-                    Text("A - Hello")
-                        .scorepadded()
-                    Text("B- Hello")
-                        .scorepadded()
-                    Text("A - Hello")
-                        .scorepadded()
-                    Text("B- Hello")
-                        .scorepadded()
-                }
-                .padding(.trailing, 70)
+                    VStack{
+                        
+                        ForEach(0..<4){
+                            number in
+                            Button{
+                                
+                            }label:{
+                                Text(options[number])
+                                    .answerpadded()
+                                
+                            }
+                            
+                        }
+                    }
             }
-            .padding(.bottom, 170)
-            //Back BUTTOM
+            .padding(.top, 170)
             
+            //Back BUTTOM
+            .padding(.bottom, 200)
             .navigationBarItems(leading: Button(action: {
                 isPresented = false  // Dismiss the full-screen cover
             }) {
@@ -82,7 +132,7 @@ struct questionshow: ViewModifier{
           .multilineTextAlignment(.center)
           .foregroundColor(.black)
           .font(.system(size: 15))
-          .frame(width:350, height:80)
+          .frame(width:350, height:85)
           .background(Color(.white))
           .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
           .shadow(radius: 0.5)
@@ -99,17 +149,22 @@ extension View{
 struct answerpad: ViewModifier{
   func body (content: Content) -> some View{
       content
-          .multilineTextAlignment(.trailing)
+          .multilineTextAlignment(.center)
           .foregroundColor(.black)
-          .font(.system(size: 12))
-          .frame(width:250, height:30)
+          .font(.system(size: 15))
+          .frame(width:250, height:40)
           .background(Color(.white))
-          .clipShape(Capsule())
-              .overlay(
-                  Capsule()
-                    .stroke(Color(customblue).opacity(0.6), lineWidth: 3)
-              )
+          .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
           .shadow(radius: 0.5)
           
       }
 }
+
+extension View{
+  func answerpadded() -> some View{
+      modifier(answerpad())
+  }
+}
+
+
+
