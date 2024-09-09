@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F7654D42C8F1AAB0080E3CA /* VocabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7654D32C8F1AAB0080E3CA /* VocabView.swift */; };
+		7F7654D62C8F34180080E3CA /* QuizViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7654D52C8F34180080E3CA /* QuizViewModifiers.swift */; };
+		7F7654D82C8F343C0080E3CA /* QuizViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7654D72C8F343C0080E3CA /* QuizViewExtensions.swift */; };
+		7F7654DA2C8F345F0080E3CA /* QuizViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7654D92C8F345F0080E3CA /* QuizViewModel.swift */; };
 		7F781BE02C8C325F0090E225 /* FunLabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F781BDF2C8C325F0090E225 /* FunLabView.swift */; };
 		7F781BE22C8C34A20090E225 /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F781BE12C8C34A20090E225 /* QuizView.swift */; };
 		7F781BE42C8C34BF0090E225 /* ClanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F781BE32C8C34BF0090E225 /* ClanView.swift */; };
@@ -40,6 +44,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7F7654D32C8F1AAB0080E3CA /* VocabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabView.swift; sourceTree = "<group>"; };
+		7F7654D52C8F34180080E3CA /* QuizViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewModifiers.swift; sourceTree = "<group>"; };
+		7F7654D72C8F343C0080E3CA /* QuizViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewExtensions.swift; sourceTree = "<group>"; };
+		7F7654D92C8F345F0080E3CA /* QuizViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewModel.swift; sourceTree = "<group>"; };
 		7F781BDF2C8C325F0090E225 /* FunLabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunLabView.swift; sourceTree = "<group>"; };
 		7F781BE12C8C34A20090E225 /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
 		7F781BE32C8C34BF0090E225 /* ClanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClanView.swift; sourceTree = "<group>"; };
@@ -134,6 +142,7 @@
 				7F781BE32C8C34BF0090E225 /* ClanView.swift */,
 				7F781BE12C8C34A20090E225 /* QuizView.swift */,
 				7FBC62B52C8DBE8D004AB1E0 /* MathView.swift */,
+				7F7654D32C8F1AAB0080E3CA /* VocabView.swift */,
 				7F781BDF2C8C325F0090E225 /* FunLabView.swift */,
 			);
 			path = Views;
@@ -145,6 +154,7 @@
 				E813C7492C79A27B00167B49 /* LoginViewViewModel.swift */,
 				E813C74B2C79A28600167B49 /* RegisterViewViewModel.swift */,
 				E813C75D2C79F8E100167B49 /* ContentViewViewModel.swift */,
+				7F7654D92C8F345F0080E3CA /* QuizViewModel.swift */,
 				7F945E902C8CA4200081245F /* HomeViewModel.swift */,
 			);
 			path = ViewModels;
@@ -174,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				E813C73F2C799FAD00167B49 /* LoginViewExtensions.swift */,
+				7F7654D72C8F343C0080E3CA /* QuizViewExtensions.swift */,
 				7FEB39D62C8C5387006166DE /* HomeViewExtensions.swift */,
 				E813C7452C79A22800167B49 /* RegisterViewExtensions.swift */,
 			);
@@ -186,6 +197,7 @@
 				E813C7422C79A02D00167B49 /* LoginViewViewModifiers.swift */,
 				7FEB39D42C8C5290006166DE /* HomeViewModifiers.swift */,
 				E813C7472C79A24900167B49 /* RegisterViewViewModifiers.swift */,
+				7F7654D52C8F34180080E3CA /* QuizViewModifiers.swift */,
 			);
 			path = ViewModifiers;
 			sourceTree = "<group>";
@@ -280,11 +292,14 @@
 				E813C7582C79DF4200167B49 /* KeychainManager.swift in Sources */,
 				E813C74C2C79A28600167B49 /* RegisterViewViewModel.swift in Sources */,
 				E813C7292C77853E00167B49 /* ContentView.swift in Sources */,
+				7F7654DA2C8F345F0080E3CA /* QuizViewModel.swift in Sources */,
 				7F945E912C8CA4200081245F /* HomeViewModel.swift in Sources */,
 				E813C7462C79A22800167B49 /* RegisterViewExtensions.swift in Sources */,
 				E813C7402C799FAD00167B49 /* LoginViewExtensions.swift in Sources */,
 				E813C7372C7794BA00167B49 /* RegisterView.swift in Sources */,
+				7F7654D82C8F343C0080E3CA /* QuizViewExtensions.swift in Sources */,
 				7F781BE42C8C34BF0090E225 /* ClanView.swift in Sources */,
+				7F7654D62C8F34180080E3CA /* QuizViewModifiers.swift in Sources */,
 				E813C75C2C79F63600167B49 /* TestView.swift in Sources */,
 				E813C75E2C79F8E100167B49 /* ContentViewViewModel.swift in Sources */,
 				7FEB39D52C8C5290006166DE /* HomeViewModifiers.swift in Sources */,
@@ -293,6 +308,7 @@
 				E813C7602C7A009200167B49 /* RefreshTokenModel.swift in Sources */,
 				E813C74A2C79A27B00167B49 /* LoginViewViewModel.swift in Sources */,
 				E813C7392C7796A700167B49 /* LoginView.swift in Sources */,
+				7F7654D42C8F1AAB0080E3CA /* VocabView.swift in Sources */,
 				E813C7432C79A02D00167B49 /* LoginViewViewModifiers.swift in Sources */,
 				E813C7272C77853E00167B49 /* EducaFunApp.swift in Sources */,
 				E813C7512C79AE3B00167B49 /* UserModel.swift in Sources */,

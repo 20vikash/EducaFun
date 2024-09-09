@@ -8,15 +8,10 @@
 import SwiftUI
 
 struct QuizView: View {
-    @State private var isSheet = false
-    @State var subjects = ["Maths", "Vocabulary", "Science", "Economics"]
     @State private var showPicker = false
-    @State var subject = ""
-    @State var gamestatus = "Win"
-    @State var topscore = 700
-    @State var currentscore = 100
-    @State private var selectedSubject: String?
+    @State private var showFullScreenVocabView = false
     @State private var showFullScreenMathView = false
+    @StateObject var quizvm = QuizViewModel()
     @StateObject var homevm = HomeViewModel()
     var body: some View {
         NavigationStack{
@@ -46,16 +41,16 @@ struct QuizView: View {
                             .padding(.bottom, 20)
                         Text("Rank: \(homevm.rank)")
                             .scorepadded()
-                        Text("Top Score: \(topscore)")
+                        Text("Top Score: \(quizvm.topscore)")
                             .scorepadded()
-                        Text("Current Score: \(currentscore)")
+                        Text("Current Score: \(quizvm.currentscore)")
                             .scorepadded()
                         HStack{
                             Image("\(homevm.usermedal)")
                                 .resizable()
                                 .frame(width: 90, height: 90)
                                 .padding(.trailing, 40)
-                            quizcapsuleText(text: "Last Game: \(gamestatus)")
+                            quizcapsuleText(text: "Last Game: \(quizvm.gamestatus)")
                         }
                     }
                     
@@ -68,7 +63,7 @@ struct QuizView: View {
                 //change to 60
                 VStack(spacing: -60){
                     Button(action: {
-                        isSheet = true
+                        quizvm.isSheet = true
                     }) {
                         VStack(spacing: -50){
                             Text("MatchMaker")
@@ -82,7 +77,7 @@ struct QuizView: View {
                                 .ignoresSafeArea()
                         }
                     }
-                    .sheet(isPresented: $isSheet) {
+                    .sheet(isPresented: $quizvm.isSheet) {
                         NavigationStack{
                             VStack(spacing: -10) {
                                 Text("Select the Subject")
@@ -93,14 +88,18 @@ struct QuizView: View {
                                 HStack(spacing: -23) {
                                     ForEach(0..<4) { number in
                                         Button{
-                                            showFullScreenMathView = true
-                                            
+                                            quizvm.selectedSubject = number
+                                                                                       if number == 0 {
+                                                                                           showFullScreenMathView = true
+                                                                                       } else if number == 1 {
+                                                                                           showFullScreenVocabView = true
+                                                                                       }
                                         }label:{
                                             VStack(spacing: -10) {
-                                                Image(subjects[number])
+                                                Image(quizvm.subjects[number])
                                                     .resizable()
                                                     .frame(width: 120, height: 120)
-                                                Text("\(subjects[number])")
+                                                Text("\(quizvm.subjects[number])")
                                                     .bold()
                                                     .font(.system(size: 13))
                                                     .foregroundStyle(.black)
@@ -108,19 +107,27 @@ struct QuizView: View {
                                                     .clipShape(Capsule())
                                             }
                                         }
-                                    }
+                                        .fullScreenCover(isPresented: $showFullScreenMathView) {
+                                                            NavigationStack {
+                                                                MathView(isPresented: $showFullScreenMathView)
+                                                            }
+                                                        }
+
+                                                        .fullScreenCover(isPresented: $showFullScreenVocabView) {
+                                                            NavigationStack {
+                                                                VocabView(isPresented: $showFullScreenVocabView)
+                                                            }
+                                                        }
+                                                    }
+                                    
+                                    
                                 }
+                                
                             }
                         }
                             .presentationDetents([.fraction(0.3)])
                            
                             }
-                    .fullScreenCover(isPresented: $showFullScreenMathView) {
-                        NavigationStack {
-                            MathView()  // MathView appears in full screen
-                        }
-                        
-                    }
                 }
                 .padding(.top, 500)
             }
@@ -134,98 +141,6 @@ struct QuizView: View {
 
 //Sheet View
 
-
-
-struct scorepad: ViewModifier{
-  func body (content: Content) -> some View{
-      content
-          .multilineTextAlignment(.trailing)
-          .foregroundColor(.black)
-          .font(.system(size: 12))
-          .frame(width:250, height:30)
-          .background(Color(.white))
-          .clipShape(Capsule())
-              .overlay(
-                  Capsule()
-                    .stroke(Color(customblue).opacity(0.6), lineWidth: 3)
-              )
-          .shadow(radius: 0.5)
-          
-      }
-}
-extension View{
-  func scorepadded() -> some View{
-      modifier(scorepad())
-  }
-}
-
-struct quizuserimage: ViewModifier{
-    func body (content: Content) -> some View{
-        content
-            .clipShape(Circle())
-            .overlay(
-                Circle()
-                    .stroke(Color(customblue).opacity(0.6), lineWidth: 7)
-            )
-        //Image Position
-            .shadow(radius: 5)
-            .frame(width:100, height: 100)
-        
-    }
-}
-
-extension View{
-  func quizuserimaged() -> some View{
-      modifier(quizuserimage())
-  }
-}
-
-struct quizcapsuleText: View{
-    var text:String
-    var body: some View{
-        Text(text)
-            .font(.system(size: 13))
-            .bold()
-            .padding()
-            .foregroundStyle(.black)
-            .background(Color(customyellow).opacity(0.8))
-            .clipShape(.rect(cornerRadius: 30))
-        
-        }
-}
-struct quizhighlight: ViewModifier{
-    func body (content: Content) -> some View{
-        content
-            .padding(.leading, 10)
-            .padding(.trailing, 10)
-            .background(Color(customyellow).opacity(0.9))
-            .clipShape(.capsule)
-            .font(.system(size: 19))
-            .padding(.bottom, 405)
-            .font(.system(size: 20))
-        
-    }
-}
-extension View{
-  func quizhighlighted() -> some View{
-      self.modifier(quizhighlight())
-  }
-}
-struct container: ViewModifier{
-    func body (content: Content) -> some View{
-        content
-            .frame(maxWidth :90, maxHeight: 90)
-            .background(Color(customblue).opacity(0.3))
-            .clipShape(.rect(cornerRadius: 90))
-            .padding(.horizontal)
-            .padding(.bottom, 100)
-    }
-}
-extension View{
-  func containerized() -> some View{
-      modifier(container())
-  }
-}
 
 
 
