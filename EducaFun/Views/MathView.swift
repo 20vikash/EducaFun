@@ -154,7 +154,7 @@ struct answerpad: ViewModifier{
           .font(.system(size: 15))
           .frame(width:250, height:40)
           .background(Color(.white))
-          .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
+          .border(Color.black)
           .shadow(radius: 0.5)
           
       }
@@ -165,6 +165,3 @@ extension View{
       modifier(answerpad())
   }
 }
-
-
-

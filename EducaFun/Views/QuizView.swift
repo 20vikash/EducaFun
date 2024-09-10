@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AlertToast
 
 struct QuizView: View {
     @State private var showPicker = false
@@ -127,6 +128,9 @@ struct QuizView: View {
                     }
                 }
                 .padding(.top, 500)
+            }
+            .toast(isPresenting: $socketManager.isLoading) {
+                AlertToast(type: .loading, title: "Match making.....")
             }
             .onReceive(socketManager.$isLoading, perform: { loading in
                 if !loading {
