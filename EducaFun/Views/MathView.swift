@@ -43,7 +43,7 @@ struct MathView: View {
                     }
                     VStack{
                         Button{
-                            
+                            //Movve to Next Question -- only changong question
                         }label:{
                             Text("Next Question")
                                 .bold()
@@ -71,7 +71,7 @@ struct MathView: View {
             .padding(.top, 150)
             .padding(.bottom, 200)
             VStack(spacing: 25){
-                Text("1. Question is this which is the hoighest thunf in the entire worls i uia iaihfab iafbafgd uiafabavdhyfayfaiuug")
+                Text("1. Question is this which is the in the enti")
                     .padding()
                     .questionshowed()
                     VStack{

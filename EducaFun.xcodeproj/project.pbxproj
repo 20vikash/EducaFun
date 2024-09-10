@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F46266A2C90983D00DDB4C3 /* TrainTroopsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4626692C90983D00DDB4C3 /* TrainTroopsView.swift */; };
+		7F46266C2C909A1100DDB4C3 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F46266B2C909A1100DDB4C3 /* ChatView.swift */; };
+		7F46266E2C909AAF00DDB4C3 /* MathTroopsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F46266D2C909AAF00DDB4C3 /* MathTroopsView.swift */; };
+		7F4626702C90A42E00DDB4C3 /* ClanViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F46266F2C90A42E00DDB4C3 /* ClanViewModifier.swift */; };
+		7F4626722C90A47500DDB4C3 /* ClanViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4626712C90A47500DDB4C3 /* ClanViewExtensions.swift */; };
+		7F4626742C90A4A600DDB4C3 /* ClanViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4626732C90A4A600DDB4C3 /* ClanViewModel.swift */; };
 		7F7654D42C8F1AAB0080E3CA /* VocabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7654D32C8F1AAB0080E3CA /* VocabView.swift */; };
 		7F7654D62C8F34180080E3CA /* QuizViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7654D52C8F34180080E3CA /* QuizViewModifiers.swift */; };
 		7F7654D82C8F343C0080E3CA /* QuizViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7654D72C8F343C0080E3CA /* QuizViewExtensions.swift */; };
@@ -44,6 +50,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7F4626692C90983D00DDB4C3 /* TrainTroopsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainTroopsView.swift; sourceTree = "<group>"; };
+		7F46266B2C909A1100DDB4C3 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		7F46266D2C909AAF00DDB4C3 /* MathTroopsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathTroopsView.swift; sourceTree = "<group>"; };
+		7F46266F2C90A42E00DDB4C3 /* ClanViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClanViewModifier.swift; sourceTree = "<group>"; };
+		7F4626712C90A47500DDB4C3 /* ClanViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClanViewExtensions.swift; sourceTree = "<group>"; };
+		7F4626732C90A4A600DDB4C3 /* ClanViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClanViewModel.swift; sourceTree = "<group>"; };
 		7F7654D32C8F1AAB0080E3CA /* VocabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabView.swift; sourceTree = "<group>"; };
 		7F7654D52C8F34180080E3CA /* QuizViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewModifiers.swift; sourceTree = "<group>"; };
 		7F7654D72C8F343C0080E3CA /* QuizViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewExtensions.swift; sourceTree = "<group>"; };
@@ -138,7 +150,10 @@
 				E813C7382C7796A700167B49 /* LoginView.swift */,
 				E813C75B2C79F63600167B49 /* TestView.swift */,
 				E813C7612C7A0E6A00167B49 /* HomePageView.swift */,
+				7F4626692C90983D00DDB4C3 /* TrainTroopsView.swift */,
+				7F46266B2C909A1100DDB4C3 /* ChatView.swift */,
 				7F781BE52C8C34DB0090E225 /* EducaAIView.swift */,
+				7F46266D2C909AAF00DDB4C3 /* MathTroopsView.swift */,
 				7F781BE32C8C34BF0090E225 /* ClanView.swift */,
 				7F781BE12C8C34A20090E225 /* QuizView.swift */,
 				7FBC62B52C8DBE8D004AB1E0 /* MathView.swift */,
@@ -155,6 +170,7 @@
 				E813C74B2C79A28600167B49 /* RegisterViewViewModel.swift */,
 				E813C75D2C79F8E100167B49 /* ContentViewViewModel.swift */,
 				7F7654D92C8F345F0080E3CA /* QuizViewModel.swift */,
+				7F4626732C90A4A600DDB4C3 /* ClanViewModel.swift */,
 				7F945E902C8CA4200081245F /* HomeViewModel.swift */,
 			);
 			path = ViewModels;
@@ -186,6 +202,7 @@
 				E813C73F2C799FAD00167B49 /* LoginViewExtensions.swift */,
 				7F7654D72C8F343C0080E3CA /* QuizViewExtensions.swift */,
 				7FEB39D62C8C5387006166DE /* HomeViewExtensions.swift */,
+				7F4626712C90A47500DDB4C3 /* ClanViewExtensions.swift */,
 				E813C7452C79A22800167B49 /* RegisterViewExtensions.swift */,
 			);
 			path = Extensions;
@@ -197,6 +214,7 @@
 				E813C7422C79A02D00167B49 /* LoginViewViewModifiers.swift */,
 				7FEB39D42C8C5290006166DE /* HomeViewModifiers.swift */,
 				E813C7472C79A24900167B49 /* RegisterViewViewModifiers.swift */,
+				7F46266F2C90A42E00DDB4C3 /* ClanViewModifier.swift */,
 				7F7654D52C8F34180080E3CA /* QuizViewModifiers.swift */,
 			);
 			path = ViewModifiers;
@@ -293,6 +311,7 @@
 				E813C74C2C79A28600167B49 /* RegisterViewViewModel.swift in Sources */,
 				E813C7292C77853E00167B49 /* ContentView.swift in Sources */,
 				7F7654DA2C8F345F0080E3CA /* QuizViewModel.swift in Sources */,
+				7F46266C2C909A1100DDB4C3 /* ChatView.swift in Sources */,
 				7F945E912C8CA4200081245F /* HomeViewModel.swift in Sources */,
 				E813C7462C79A22800167B49 /* RegisterViewExtensions.swift in Sources */,
 				E813C7402C799FAD00167B49 /* LoginViewExtensions.swift in Sources */,
@@ -305,17 +324,22 @@
 				7FEB39D52C8C5290006166DE /* HomeViewModifiers.swift in Sources */,
 				E813C74F2C79A3EC00167B49 /* CustomColors.swift in Sources */,
 				7F781BE02C8C325F0090E225 /* FunLabView.swift in Sources */,
+				7F4626702C90A42E00DDB4C3 /* ClanViewModifier.swift in Sources */,
 				E813C7602C7A009200167B49 /* RefreshTokenModel.swift in Sources */,
 				E813C74A2C79A27B00167B49 /* LoginViewViewModel.swift in Sources */,
+				7F4626722C90A47500DDB4C3 /* ClanViewExtensions.swift in Sources */,
+				7F46266E2C909AAF00DDB4C3 /* MathTroopsView.swift in Sources */,
 				E813C7392C7796A700167B49 /* LoginView.swift in Sources */,
 				7F7654D42C8F1AAB0080E3CA /* VocabView.swift in Sources */,
 				E813C7432C79A02D00167B49 /* LoginViewViewModifiers.swift in Sources */,
 				E813C7272C77853E00167B49 /* EducaFunApp.swift in Sources */,
 				E813C7512C79AE3B00167B49 /* UserModel.swift in Sources */,
 				7F781BE62C8C34DB0090E225 /* EducaAIView.swift in Sources */,
+				7F4626742C90A4A600DDB4C3 /* ClanViewModel.swift in Sources */,
 				E813C75A2C79E63800167B49 /* SessionModel.swift in Sources */,
 				7F781BE22C8C34A20090E225 /* QuizView.swift in Sources */,
 				7FBC62B62C8DBE8D004AB1E0 /* MathView.swift in Sources */,
+				7F46266A2C90983D00DDB4C3 /* TrainTroopsView.swift in Sources */,
 				E813C7622C7A0E6A00167B49 /* HomePageView.swift in Sources */,
 				E813C7482C79A24900167B49 /* RegisterViewViewModifiers.swift in Sources */,
 				7FEB39D72C8C5387006166DE /* HomeViewExtensions.swift in Sources */,
