@@ -64,7 +64,7 @@ class RegisterViewViewModel: ObservableObject {
             return
         }
         
-        guard let url = URL(string: "https://apiep.zeal.wtf/v1/users") else {
+        guard let url = URL(string: "https://educafunapi.zeal.lol/v1/users") else {
             errorMessage = "Something went wrong.. Try again"
             showToast = true
             isLoading = false

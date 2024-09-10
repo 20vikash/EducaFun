@@ -116,6 +116,7 @@ class ContentViewViewModel: ObservableObject {
                 TokenManager.setRefreshToken(returnedData.data.refreshToken)
                 TokenManager.setAccessTokenExpiry(returnedData.data.accessTokenExpiresIn)
                 TokenManager.setRefreshTokenExpiry(returnedData.data.refreshTokenExpiresIn)
+                TokenManager.setUID(returnedData.data.uid)
             }
             .store(in: &cancellables)
     }

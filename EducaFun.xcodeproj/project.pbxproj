@@ -33,14 +33,16 @@
 		E813C74C2C79A28600167B49 /* RegisterViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E813C74B2C79A28600167B49 /* RegisterViewViewModel.swift */; };
 		E813C74F2C79A3EC00167B49 /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E813C74E2C79A3EC00167B49 /* CustomColors.swift */; };
 		E813C7512C79AE3B00167B49 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E813C7502C79AE3B00167B49 /* UserModel.swift */; };
-		E813C7562C79D30900167B49 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E813C7552C79D30900167B49 /* KeychainSwift */; };
 		E813C7582C79DF4200167B49 /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E813C7572C79DF4200167B49 /* KeychainManager.swift */; };
 		E813C75A2C79E63800167B49 /* SessionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E813C7592C79E63800167B49 /* SessionModel.swift */; };
 		E813C75C2C79F63600167B49 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E813C75B2C79F63600167B49 /* TestView.swift */; };
 		E813C75E2C79F8E100167B49 /* ContentViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E813C75D2C79F8E100167B49 /* ContentViewViewModel.swift */; };
 		E813C7602C7A009200167B49 /* RefreshTokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E813C75F2C7A009200167B49 /* RefreshTokenModel.swift */; };
 		E813C7622C7A0E6A00167B49 /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E813C7612C7A0E6A00167B49 /* HomePageView.swift */; };
-		E813C7652C7AE84400167B49 /* AlertToast in Frameworks */ = {isa = PBXBuildFile; productRef = E813C7642C7AE84400167B49 /* AlertToast */; };
+		E813C7B12C8F5A7E00167B49 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E813C7B02C8F5A7E00167B49 /* KeychainSwift */; };
+		E813C7B42C8F5A8400167B49 /* AlertToast in Frameworks */ = {isa = PBXBuildFile; productRef = E813C7B32C8F5A8400167B49 /* AlertToast */; };
+		E813C7B72C8FF45200167B49 /* SocketIO in Frameworks */ = {isa = PBXBuildFile; productRef = E813C7B62C8FF45200167B49 /* SocketIO */; };
+		E813C7BA2C8FF47E00167B49 /* SocketIOManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E813C7B92C8FF47E00167B49 /* SocketIOManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +79,7 @@
 		E813C75D2C79F8E100167B49 /* ContentViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewViewModel.swift; sourceTree = "<group>"; };
 		E813C75F2C7A009200167B49 /* RefreshTokenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshTokenModel.swift; sourceTree = "<group>"; };
 		E813C7612C7A0E6A00167B49 /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
+		E813C7B92C8FF47E00167B49 /* SocketIOManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketIOManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,8 +87,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E813C7562C79D30900167B49 /* KeychainSwift in Frameworks */,
-				E813C7652C7AE84400167B49 /* AlertToast in Frameworks */,
+				E813C7B12C8F5A7E00167B49 /* KeychainSwift in Frameworks */,
+				E813C7B42C8F5A8400167B49 /* AlertToast in Frameworks */,
+				E813C7B72C8FF45200167B49 /* SocketIO in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,6 +177,7 @@
 		E813C73D2C799F6600167B49 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				E813C7B82C8FF46A00167B49 /* Managers */,
 				E813C74D2C79A3E100167B49 /* Customs */,
 				E813C7412C799FED00167B49 /* ViewModifiers */,
 				E813C73E2C799F6B00167B49 /* Extensions */,
@@ -211,6 +216,14 @@
 			path = Customs;
 			sourceTree = "<group>";
 		};
+		E813C7B82C8FF46A00167B49 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				E813C7B92C8FF47E00167B49 /* SocketIOManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -228,8 +241,9 @@
 			);
 			name = EducaFun;
 			packageProductDependencies = (
-				E813C7552C79D30900167B49 /* KeychainSwift */,
-				E813C7642C7AE84400167B49 /* AlertToast */,
+				E813C7B02C8F5A7E00167B49 /* KeychainSwift */,
+				E813C7B32C8F5A8400167B49 /* AlertToast */,
+				E813C7B62C8FF45200167B49 /* SocketIO */,
 			);
 			productName = EducaFun;
 			productReference = E813C7232C77853E00167B49 /* EducaFun.app */;
@@ -260,8 +274,9 @@
 			);
 			mainGroup = E813C71A2C77853E00167B49;
 			packageReferences = (
-				E813C7542C79D30900167B49 /* XCRemoteSwiftPackageReference "keychain-swift" */,
-				E813C7632C7AE84400167B49 /* XCRemoteSwiftPackageReference "AlertToast" */,
+				E813C7AF2C8F5A7E00167B49 /* XCRemoteSwiftPackageReference "keychain-swift" */,
+				E813C7B22C8F5A8400167B49 /* XCRemoteSwiftPackageReference "AlertToast" */,
+				E813C7B52C8FF45200167B49 /* XCRemoteSwiftPackageReference "socket.io-client-swift" */,
 			);
 			productRefGroup = E813C7242C77853E00167B49 /* Products */;
 			projectDirPath = "";
@@ -305,6 +320,7 @@
 				7FEB39D52C8C5290006166DE /* HomeViewModifiers.swift in Sources */,
 				E813C74F2C79A3EC00167B49 /* CustomColors.swift in Sources */,
 				7F781BE02C8C325F0090E225 /* FunLabView.swift in Sources */,
+				E813C7BA2C8FF47E00167B49 /* SocketIOManager.swift in Sources */,
 				E813C7602C7A009200167B49 /* RefreshTokenModel.swift in Sources */,
 				E813C74A2C79A27B00167B49 /* LoginViewViewModel.swift in Sources */,
 				E813C7392C7796A700167B49 /* LoginView.swift in Sources */,
@@ -524,7 +540,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		E813C7542C79D30900167B49 /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+		E813C7AF2C8F5A7E00167B49 /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/evgenyneu/keychain-swift.git";
 			requirement = {
@@ -532,7 +548,7 @@
 				minimumVersion = 24.0.0;
 			};
 		};
-		E813C7632C7AE84400167B49 /* XCRemoteSwiftPackageReference "AlertToast" */ = {
+		E813C7B22C8F5A8400167B49 /* XCRemoteSwiftPackageReference "AlertToast" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/elai950/AlertToast.git";
 			requirement = {
@@ -540,18 +556,31 @@
 				minimumVersion = 1.3.9;
 			};
 		};
+		E813C7B52C8FF45200167B49 /* XCRemoteSwiftPackageReference "socket.io-client-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/socketio/socket.io-client-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		E813C7552C79D30900167B49 /* KeychainSwift */ = {
+		E813C7B02C8F5A7E00167B49 /* KeychainSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = E813C7542C79D30900167B49 /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			package = E813C7AF2C8F5A7E00167B49 /* XCRemoteSwiftPackageReference "keychain-swift" */;
 			productName = KeychainSwift;
 		};
-		E813C7642C7AE84400167B49 /* AlertToast */ = {
+		E813C7B32C8F5A8400167B49 /* AlertToast */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = E813C7632C7AE84400167B49 /* XCRemoteSwiftPackageReference "AlertToast" */;
+			package = E813C7B22C8F5A8400167B49 /* XCRemoteSwiftPackageReference "AlertToast" */;
 			productName = AlertToast;
+		};
+		E813C7B62C8FF45200167B49 /* SocketIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E813C7B52C8FF45200167B49 /* XCRemoteSwiftPackageReference "socket.io-client-swift" */;
+			productName = SocketIO;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

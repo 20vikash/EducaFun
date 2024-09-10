@@ -24,6 +24,7 @@ struct Session: Codable {
 
 struct DataClass: Codable {
     let sessionID: Int
+    let uid: Int
     let accessToken: String
     let accessTokenExpiresIn: Double
     let refreshToken: String
@@ -31,6 +32,7 @@ struct DataClass: Codable {
 
     enum CodingKeys: String, CodingKey {
         case sessionID = "session_id"
+        case uid = "uid"
         case accessToken = "access_token"
         case accessTokenExpiresIn = "access_token_expires_in"
         case refreshToken = "refresh_token"

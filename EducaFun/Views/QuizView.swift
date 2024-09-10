@@ -13,6 +13,9 @@ struct QuizView: View {
     @State private var showFullScreenMathView = false
     @StateObject var quizvm = QuizViewModel()
     @StateObject var homevm = HomeViewModel()
+    
+    private var socketManager = SocketIOManager()
+    
     var body: some View {
         NavigationStack{
             ZStack{
@@ -89,11 +92,14 @@ struct QuizView: View {
                                     ForEach(0..<4) { number in
                                         Button{
                                             quizvm.selectedSubject = number
-                                                                                       if number == 0 {
-                                                                                           showFullScreenMathView = true
-                                                                                       } else if number == 1 {
-                                                                                           showFullScreenVocabView = true
-                                                                                       }
+                                            socketManager.matchMaking(data: [
+                                                "uid": TokenManager.getUID() ?? ""
+                                            ])
+                                            if number == 0 {
+                                                showFullScreenMathView = true
+                                            } else if number == 1 {
+                                                showFullScreenVocabView = true
+                                            }
                                         }label:{
                                             VStack(spacing: -10) {
                                                 Image(quizvm.subjects[number])
@@ -108,26 +114,23 @@ struct QuizView: View {
                                             }
                                         }
                                         .fullScreenCover(isPresented: $showFullScreenMathView) {
-                                                            NavigationStack {
-                                                                MathView(isPresented: $showFullScreenMathView)
-                                                            }
-                                                        }
-
-                                                        .fullScreenCover(isPresented: $showFullScreenVocabView) {
-                                                            NavigationStack {
-                                                                VocabView(isPresented: $showFullScreenVocabView)
-                                                            }
-                                                        }
-                                                    }
-                                    
-                                    
+                                            NavigationStack {
+                                                MathView(isPresented: $showFullScreenMathView)
+                                            }
+                                        }
+                                        
+                                        .fullScreenCover(isPresented: $showFullScreenVocabView) {
+                                            NavigationStack {
+                                                VocabView(isPresented: $showFullScreenVocabView)
+                                            }
+                                        }
+                                    }
                                 }
-                                
                             }
                         }
-                            .presentationDetents([.fraction(0.3)])
-                           
-                            }
+                        .presentationDetents([.fraction(0.3)])
+                        
+                    }
                 }
                 .padding(.top, 500)
             }
@@ -138,9 +141,3 @@ struct QuizView: View {
 #Preview {
     QuizView()
 }
-
-//Sheet View
-
-
-
-

@@ -91,7 +91,7 @@ struct MathView: View {
             }
             .padding(.top, 170)
             
-            //Back BUTTOM
+            //Back BUTTON
             .padding(.bottom, 200)
             .navigationBarItems(leading: Button(action: {
                 isPresented = false  // Dismiss the full-screen cover

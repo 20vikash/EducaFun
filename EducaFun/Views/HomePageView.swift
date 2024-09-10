@@ -137,5 +137,3 @@ struct HomePageView: View{
 #Preview {
     HomePageView()
 }
-
-

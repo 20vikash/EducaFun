@@ -53,6 +53,14 @@ class TokenManager {
         keychain.set(futureDate.description, forKey: "aexpiry")
     }
     
+    static func setUID(_ uid: Int) {
+        keychain.set(uid.description, forKey: "uid")
+    }
+    
+    static func getUID() -> String? {
+        keychain.get("uid")
+    }
+    
     static func getAccessTokenExpiry() -> String? {
         keychain.get("aexpiry")
     }
