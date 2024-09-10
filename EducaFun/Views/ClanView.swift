@@ -84,9 +84,3 @@ struct ClanView: View {
 #Preview {
     ClanView()
 }
-
-
-
-
-
-

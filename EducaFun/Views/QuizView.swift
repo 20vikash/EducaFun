@@ -13,6 +13,8 @@ struct QuizView: View {
     @State private var showFullScreenMathView = false
     @StateObject var quizvm = QuizViewModel()
     @StateObject var homevm = HomeViewModel()
+    
+    @StateObject var socketManager = SocketIOManager()
     var body: some View {
         NavigationStack{
             ZStack{
@@ -88,12 +90,10 @@ struct QuizView: View {
                                 HStack(spacing: -23) {
                                     ForEach(0..<4) { number in
                                         Button{
+                                            socketManager.isLoading = true
                                             quizvm.selectedSubject = number
-                                                                                       if number == 0 {
-                                                                                           showFullScreenMathView = true
-                                                                                       } else if number == 1 {
-                                                                                           showFullScreenVocabView = true
-                                                                                       }
+                                            
+                                            socketManager.matchMaking(data: ["uid": TokenManager.getUID() ?? ""])
                                         }label:{
                                             VStack(spacing: -10) {
                                                 Image(quizvm.subjects[number])
@@ -108,29 +108,35 @@ struct QuizView: View {
                                             }
                                         }
                                         .fullScreenCover(isPresented: $showFullScreenMathView) {
-                                                            NavigationStack {
-                                                                MathView(isPresented: $showFullScreenMathView)
-                                                            }
-                                                        }
-
-                                                        .fullScreenCover(isPresented: $showFullScreenVocabView) {
-                                                            NavigationStack {
-                                                                VocabView(isPresented: $showFullScreenVocabView)
-                                                            }
-                                                        }
-                                                    }
-                                    
-                                    
+                                            NavigationStack {
+                                                MathView(isPresented: $showFullScreenMathView)
+                                            }
+                                        }
+                                        
+                                        .fullScreenCover(isPresented: $showFullScreenVocabView) {
+                                            NavigationStack {
+                                                VocabView(isPresented: $showFullScreenVocabView)
+                                            }
+                                        }
+                                    }
                                 }
-                                
                             }
                         }
-                            .presentationDetents([.fraction(0.3)])
-                           
-                            }
+                        .presentationDetents([.fraction(0.3)])
+                        
+                    }
                 }
                 .padding(.top, 500)
             }
+            .onReceive(socketManager.$isLoading, perform: { loading in
+                if !loading {
+                    if (quizvm.selectedSubject == 0) {
+                        showFullScreenMathView = true
+                    } else if (quizvm.selectedSubject == 1) {
+                        showFullScreenVocabView = true
+                    }
+                }
+            })
         }
     }
 }
@@ -138,9 +144,3 @@ struct QuizView: View {
 #Preview {
     QuizView()
 }
-
-//Sheet View
-
-
-
-

@@ -53,7 +53,7 @@ class LoginViewViewModel: ObservableObject {
             return
         }
         
-        guard let url = URL(string: "https://apiep.zeal.wtf/v1/sessions") else {
+        guard let url = URL(string: "https://educafunapi.zeal.lol/v1/sessions") else {
             errorMessage = "Something went wrong"
             errorToast = true
             isLoading = false
@@ -99,6 +99,7 @@ class LoginViewViewModel: ObservableObject {
                 TokenManager.setRefreshToken(returnedData.data.refreshToken)
                 TokenManager.setAccessTokenExpiry(returnedData.data.accessTokenExpiresIn)
                 TokenManager.setRefreshTokenExpiry(returnedData.data.refreshTokenExpiresIn)
+                TokenManager.setUID(returnedData.data.uid)
             }
             .store(in: &cancellables)
     }

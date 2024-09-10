@@ -57,6 +57,14 @@ class TokenManager {
         keychain.get("aexpiry")
     }
     
+    static func setUID(_ uid: Int) {
+        keychain.set(uid.description, forKey: "uid")
+    }
+    
+    static func getUID() -> String? {
+        return keychain.get("uid")
+    }
+    
     static func clearAll() {
         keychain.clear()
     }

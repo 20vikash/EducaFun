@@ -80,7 +80,7 @@ class ContentViewViewModel: ObservableObject {
         let sessionId = TokenManager.getSessionId()
         let refreshToken = TokenManager.getRefreshToken()
         
-        guard let url = URL(string: "https://apiep.zeal.wtf/v1/sessions/\(sessionId ?? "")") else {
+        guard let url = URL(string: "https://educafunapi.zeal.lol/v1/sessions/\(sessionId ?? "")") else {
             return
         }
         
@@ -116,6 +116,7 @@ class ContentViewViewModel: ObservableObject {
                 TokenManager.setRefreshToken(returnedData.data.refreshToken)
                 TokenManager.setAccessTokenExpiry(returnedData.data.accessTokenExpiresIn)
                 TokenManager.setRefreshTokenExpiry(returnedData.data.refreshTokenExpiresIn)
+                TokenManager.setUID(returnedData.data.uid)
             }
             .store(in: &cancellables)
     }
