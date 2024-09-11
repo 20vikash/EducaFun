@@ -8,8 +8,7 @@
 import SwiftUI
 struct MathView: View {
     @Binding var isPresented: Bool// Binding to control presentation
-    @State var options = ["A", "B", "C", "D"]
-
+    @StateObject var mathvw = MathViewModel()
     var body: some View {
         ZStack{
 
@@ -71,7 +70,7 @@ struct MathView: View {
             .padding(.top, 150)
             .padding(.bottom, 200)
             VStack(spacing: 25){
-                Text("1. Question is this which is the in the enti")
+                Text("1. Question is this which is the in the entire name")
                     .padding()
                     .questionshowed()
                     VStack{
@@ -81,7 +80,7 @@ struct MathView: View {
                             Button{
                                 
                             }label:{
-                                Text(options[number])
+                                Text(mathvw.optionsmath[number])
                                     .answerpadded()
                                 
                             }
@@ -108,60 +107,5 @@ struct MathView: View {
     MathView(isPresented: .constant(false))
 }
 
-struct questionpad: ViewModifier{
-    func body (content: Content) -> some View{
-        content
-            .frame(maxWidth :400, maxHeight: 800)
-            .background(Color(customblue).opacity(0.3))
-            .clipShape(.rect(cornerRadius: 90))
-            .padding(.horizontal)
-            .padding(.bottom,-100)
-        
-    }
-}
 
-extension View{
-  func questionpadded() -> some View{
-      modifier(questionpad())
-  }
-}
 
-struct questionshow: ViewModifier{
-  func body (content: Content) -> some View{
-      content
-          .multilineTextAlignment(.center)
-          .foregroundColor(.black)
-          .font(.system(size: 15))
-          .frame(width:350, height:85)
-          .background(Color(.white))
-          .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
-          .shadow(radius: 0.5)
-          
-      }
-}
-
-extension View{
-  func questionshowed() -> some View{
-      modifier(questionshow())
-  }
-}
-
-struct answerpad: ViewModifier{
-  func body (content: Content) -> some View{
-      content
-          .multilineTextAlignment(.center)
-          .foregroundColor(.black)
-          .font(.system(size: 15))
-          .frame(width:250, height:40)
-          .background(Color(.white))
-          .border(Color.black)
-          .shadow(radius: 0.5)
-          
-      }
-}
-
-extension View{
-  func answerpadded() -> some View{
-      modifier(answerpad())
-  }
-}

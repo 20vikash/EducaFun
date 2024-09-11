@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		7F46266A2C90983D00DDB4C3 /* TrainTroopsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4626692C90983D00DDB4C3 /* TrainTroopsView.swift */; };
 		7F46266C2C909A1100DDB4C3 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F46266B2C909A1100DDB4C3 /* ChatView.swift */; };
-		7F46266E2C909AAF00DDB4C3 /* MathTroopsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F46266D2C909AAF00DDB4C3 /* MathTroopsView.swift */; };
 		7F4626702C90A42E00DDB4C3 /* ClanViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F46266F2C90A42E00DDB4C3 /* ClanViewModifier.swift */; };
 		7F4626722C90A47500DDB4C3 /* ClanViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4626712C90A47500DDB4C3 /* ClanViewExtensions.swift */; };
 		7F4626742C90A4A600DDB4C3 /* ClanViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4626732C90A4A600DDB4C3 /* ClanViewModel.swift */; };
@@ -23,6 +22,22 @@
 		7F781BE62C8C34DB0090E225 /* EducaAIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F781BE52C8C34DB0090E225 /* EducaAIView.swift */; };
 		7F945E912C8CA4200081245F /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F945E902C8CA4200081245F /* HomeViewModel.swift */; };
 		7FBC62B62C8DBE8D004AB1E0 /* MathView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBC62B52C8DBE8D004AB1E0 /* MathView.swift */; };
+		7FE892C72C91C8AD005B4FC8 /* MathTrainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE892C62C91C8AD005B4FC8 /* MathTrainView.swift */; };
+		7FE892C92C91C8CC005B4FC8 /* VocabTrainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE892C82C91C8CC005B4FC8 /* VocabTrainView.swift */; };
+		7FE892CB2C91EFF1005B4FC8 /* VocabTrainViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE892CA2C91EFF1005B4FC8 /* VocabTrainViewModifiers.swift */; };
+		7FE892CD2C91F015005B4FC8 /* MathTrainViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE892CC2C91F015005B4FC8 /* MathTrainViewModifiers.swift */; };
+		7FE892CF2C91F061005B4FC8 /* MathViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE892CE2C91F061005B4FC8 /* MathViewModifiers.swift */; };
+		7FE892D12C91F0A7005B4FC8 /* VocabTrainViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE892D02C91F0A7005B4FC8 /* VocabTrainViewExtensions.swift */; };
+		7FE892D32C91F0CB005B4FC8 /* MathTrainViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE892D22C91F0CB005B4FC8 /* MathTrainViewExtensions.swift */; };
+		7FE892D52C91F0F8005B4FC8 /* MathViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE892D42C91F0F8005B4FC8 /* MathViewExtensions.swift */; };
+		7FE892D72C91F11F005B4FC8 /* VocabViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE892D62C91F11F005B4FC8 /* VocabViewModifiers.swift */; };
+		7FE892D92C91F154005B4FC8 /* VocabViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE892D82C91F154005B4FC8 /* VocabViewExtensions.swift */; };
+		7FE892DB2C91F17D005B4FC8 /* TrainTroopsViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE892DA2C91F17D005B4FC8 /* TrainTroopsViewModifiers.swift */; };
+		7FE892DD2C91F1B6005B4FC8 /* TrainTroopsViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE892DC2C91F1B6005B4FC8 /* TrainTroopsViewExtensions.swift */; };
+		7FE892DF2C91F20B005B4FC8 /* VocabTrainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE892DE2C91F20B005B4FC8 /* VocabTrainViewModel.swift */; };
+		7FE892E12C91F305005B4FC8 /* MathTrainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE892E02C91F305005B4FC8 /* MathTrainViewModel.swift */; };
+		7FE892E32C91F3B7005B4FC8 /* MathViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE892E22C91F3B7005B4FC8 /* MathViewModel.swift */; };
+		7FE892E52C91F445005B4FC8 /* VocabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE892E42C91F445005B4FC8 /* VocabViewModel.swift */; };
 		7FEB39D52C8C5290006166DE /* HomeViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEB39D42C8C5290006166DE /* HomeViewModifiers.swift */; };
 		7FEB39D72C8C5387006166DE /* HomeViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEB39D62C8C5387006166DE /* HomeViewExtensions.swift */; };
 		E813C7272C77853E00167B49 /* EducaFunApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E813C7262C77853E00167B49 /* EducaFunApp.swift */; };
@@ -54,7 +69,6 @@
 /* Begin PBXFileReference section */
 		7F4626692C90983D00DDB4C3 /* TrainTroopsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainTroopsView.swift; sourceTree = "<group>"; };
 		7F46266B2C909A1100DDB4C3 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
-		7F46266D2C909AAF00DDB4C3 /* MathTroopsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathTroopsView.swift; sourceTree = "<group>"; };
 		7F46266F2C90A42E00DDB4C3 /* ClanViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClanViewModifier.swift; sourceTree = "<group>"; };
 		7F4626712C90A47500DDB4C3 /* ClanViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClanViewExtensions.swift; sourceTree = "<group>"; };
 		7F4626732C90A4A600DDB4C3 /* ClanViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClanViewModel.swift; sourceTree = "<group>"; };
@@ -68,6 +82,22 @@
 		7F781BE52C8C34DB0090E225 /* EducaAIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducaAIView.swift; sourceTree = "<group>"; };
 		7F945E902C8CA4200081245F /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		7FBC62B52C8DBE8D004AB1E0 /* MathView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathView.swift; sourceTree = "<group>"; };
+		7FE892C62C91C8AD005B4FC8 /* MathTrainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathTrainView.swift; sourceTree = "<group>"; };
+		7FE892C82C91C8CC005B4FC8 /* VocabTrainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabTrainView.swift; sourceTree = "<group>"; };
+		7FE892CA2C91EFF1005B4FC8 /* VocabTrainViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabTrainViewModifiers.swift; sourceTree = "<group>"; };
+		7FE892CC2C91F015005B4FC8 /* MathTrainViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathTrainViewModifiers.swift; sourceTree = "<group>"; };
+		7FE892CE2C91F061005B4FC8 /* MathViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathViewModifiers.swift; sourceTree = "<group>"; };
+		7FE892D02C91F0A7005B4FC8 /* VocabTrainViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabTrainViewExtensions.swift; sourceTree = "<group>"; };
+		7FE892D22C91F0CB005B4FC8 /* MathTrainViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathTrainViewExtensions.swift; sourceTree = "<group>"; };
+		7FE892D42C91F0F8005B4FC8 /* MathViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathViewExtensions.swift; sourceTree = "<group>"; };
+		7FE892D62C91F11F005B4FC8 /* VocabViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabViewModifiers.swift; sourceTree = "<group>"; };
+		7FE892D82C91F154005B4FC8 /* VocabViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabViewExtensions.swift; sourceTree = "<group>"; };
+		7FE892DA2C91F17D005B4FC8 /* TrainTroopsViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainTroopsViewModifiers.swift; sourceTree = "<group>"; };
+		7FE892DC2C91F1B6005B4FC8 /* TrainTroopsViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainTroopsViewExtensions.swift; sourceTree = "<group>"; };
+		7FE892DE2C91F20B005B4FC8 /* VocabTrainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabTrainViewModel.swift; sourceTree = "<group>"; };
+		7FE892E02C91F305005B4FC8 /* MathTrainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathTrainViewModel.swift; sourceTree = "<group>"; };
+		7FE892E22C91F3B7005B4FC8 /* MathViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathViewModel.swift; sourceTree = "<group>"; };
+		7FE892E42C91F445005B4FC8 /* VocabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabViewModel.swift; sourceTree = "<group>"; };
 		7FEB39D42C8C5290006166DE /* HomeViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModifiers.swift; sourceTree = "<group>"; };
 		7FEB39D62C8C5387006166DE /* HomeViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewExtensions.swift; sourceTree = "<group>"; };
 		E813C7232C77853E00167B49 /* EducaFun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EducaFun.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -156,8 +186,9 @@
 				E813C7612C7A0E6A00167B49 /* HomePageView.swift */,
 				7F4626692C90983D00DDB4C3 /* TrainTroopsView.swift */,
 				7F46266B2C909A1100DDB4C3 /* ChatView.swift */,
+				7FE892C82C91C8CC005B4FC8 /* VocabTrainView.swift */,
+				7FE892C62C91C8AD005B4FC8 /* MathTrainView.swift */,
 				7F781BE52C8C34DB0090E225 /* EducaAIView.swift */,
-				7F46266D2C909AAF00DDB4C3 /* MathTroopsView.swift */,
 				7F781BE32C8C34BF0090E225 /* ClanView.swift */,
 				7F781BE12C8C34A20090E225 /* QuizView.swift */,
 				7FBC62B52C8DBE8D004AB1E0 /* MathView.swift */,
@@ -174,6 +205,10 @@
 				E813C74B2C79A28600167B49 /* RegisterViewViewModel.swift */,
 				E813C75D2C79F8E100167B49 /* ContentViewViewModel.swift */,
 				7F7654D92C8F345F0080E3CA /* QuizViewModel.swift */,
+				7FE892E02C91F305005B4FC8 /* MathTrainViewModel.swift */,
+				7FE892E22C91F3B7005B4FC8 /* MathViewModel.swift */,
+				7FE892E42C91F445005B4FC8 /* VocabViewModel.swift */,
+				7FE892DE2C91F20B005B4FC8 /* VocabTrainViewModel.swift */,
 				7F4626732C90A4A600DDB4C3 /* ClanViewModel.swift */,
 				7F945E902C8CA4200081245F /* HomeViewModel.swift */,
 			);
@@ -206,8 +241,13 @@
 			children = (
 				E813C73F2C799FAD00167B49 /* LoginViewExtensions.swift */,
 				7F7654D72C8F343C0080E3CA /* QuizViewExtensions.swift */,
+				7FE892DC2C91F1B6005B4FC8 /* TrainTroopsViewExtensions.swift */,
 				7FEB39D62C8C5387006166DE /* HomeViewExtensions.swift */,
 				7F4626712C90A47500DDB4C3 /* ClanViewExtensions.swift */,
+				7FE892D02C91F0A7005B4FC8 /* VocabTrainViewExtensions.swift */,
+				7FE892D22C91F0CB005B4FC8 /* MathTrainViewExtensions.swift */,
+				7FE892D82C91F154005B4FC8 /* VocabViewExtensions.swift */,
+				7FE892D42C91F0F8005B4FC8 /* MathViewExtensions.swift */,
 				E813C7452C79A22800167B49 /* RegisterViewExtensions.swift */,
 			);
 			path = Extensions;
@@ -219,7 +259,12 @@
 				E813C7422C79A02D00167B49 /* LoginViewViewModifiers.swift */,
 				7FEB39D42C8C5290006166DE /* HomeViewModifiers.swift */,
 				E813C7472C79A24900167B49 /* RegisterViewViewModifiers.swift */,
+				7FE892DA2C91F17D005B4FC8 /* TrainTroopsViewModifiers.swift */,
 				7F46266F2C90A42E00DDB4C3 /* ClanViewModifier.swift */,
+				7FE892CA2C91EFF1005B4FC8 /* VocabTrainViewModifiers.swift */,
+				7FE892CC2C91F015005B4FC8 /* MathTrainViewModifiers.swift */,
+				7FE892D62C91F11F005B4FC8 /* VocabViewModifiers.swift */,
+				7FE892CE2C91F061005B4FC8 /* MathViewModifiers.swift */,
 				7F7654D52C8F34180080E3CA /* QuizViewModifiers.swift */,
 			);
 			path = ViewModifiers;
@@ -323,28 +368,38 @@
 			buildActionMask = 2147483647;
 			files = (
 				E813C7582C79DF4200167B49 /* KeychainManager.swift in Sources */,
+				7FE892CF2C91F061005B4FC8 /* MathViewModifiers.swift in Sources */,
+				7FE892CB2C91EFF1005B4FC8 /* VocabTrainViewModifiers.swift in Sources */,
 				E813C74C2C79A28600167B49 /* RegisterViewViewModel.swift in Sources */,
 				E813C7292C77853E00167B49 /* ContentView.swift in Sources */,
+				7FE892D72C91F11F005B4FC8 /* VocabViewModifiers.swift in Sources */,
+				7FE892CD2C91F015005B4FC8 /* MathTrainViewModifiers.swift in Sources */,
+				7FE892DF2C91F20B005B4FC8 /* VocabTrainViewModel.swift in Sources */,
 				7F7654DA2C8F345F0080E3CA /* QuizViewModel.swift in Sources */,
+				7FE892D12C91F0A7005B4FC8 /* VocabTrainViewExtensions.swift in Sources */,
 				E813C7BD2C90A98A00167B49 /* SocketIOManager.swift in Sources */,
+				7FE892C92C91C8CC005B4FC8 /* VocabTrainView.swift in Sources */,
 				7F46266C2C909A1100DDB4C3 /* ChatView.swift in Sources */,
 				7F945E912C8CA4200081245F /* HomeViewModel.swift in Sources */,
 				E813C7462C79A22800167B49 /* RegisterViewExtensions.swift in Sources */,
 				E813C7402C799FAD00167B49 /* LoginViewExtensions.swift in Sources */,
+				7FE892C72C91C8AD005B4FC8 /* MathTrainView.swift in Sources */,
 				E813C7372C7794BA00167B49 /* RegisterView.swift in Sources */,
 				7F7654D82C8F343C0080E3CA /* QuizViewExtensions.swift in Sources */,
 				7F781BE42C8C34BF0090E225 /* ClanView.swift in Sources */,
 				7F7654D62C8F34180080E3CA /* QuizViewModifiers.swift in Sources */,
 				E813C75C2C79F63600167B49 /* TestView.swift in Sources */,
+				7FE892E32C91F3B7005B4FC8 /* MathViewModel.swift in Sources */,
+				7FE892D32C91F0CB005B4FC8 /* MathTrainViewExtensions.swift in Sources */,
 				E813C75E2C79F8E100167B49 /* ContentViewViewModel.swift in Sources */,
 				7FEB39D52C8C5290006166DE /* HomeViewModifiers.swift in Sources */,
 				E813C74F2C79A3EC00167B49 /* CustomColors.swift in Sources */,
 				7F781BE02C8C325F0090E225 /* FunLabView.swift in Sources */,
+				7FE892E12C91F305005B4FC8 /* MathTrainViewModel.swift in Sources */,
 				7F4626702C90A42E00DDB4C3 /* ClanViewModifier.swift in Sources */,
 				E813C7602C7A009200167B49 /* RefreshTokenModel.swift in Sources */,
 				E813C74A2C79A27B00167B49 /* LoginViewViewModel.swift in Sources */,
 				7F4626722C90A47500DDB4C3 /* ClanViewExtensions.swift in Sources */,
-				7F46266E2C909AAF00DDB4C3 /* MathTroopsView.swift in Sources */,
 				E813C7392C7796A700167B49 /* LoginView.swift in Sources */,
 				7F7654D42C8F1AAB0080E3CA /* VocabView.swift in Sources */,
 				E813C7432C79A02D00167B49 /* LoginViewViewModifiers.swift in Sources */,
@@ -352,10 +407,15 @@
 				E813C7512C79AE3B00167B49 /* UserModel.swift in Sources */,
 				7F781BE62C8C34DB0090E225 /* EducaAIView.swift in Sources */,
 				7F4626742C90A4A600DDB4C3 /* ClanViewModel.swift in Sources */,
+				7FE892D52C91F0F8005B4FC8 /* MathViewExtensions.swift in Sources */,
 				E813C75A2C79E63800167B49 /* SessionModel.swift in Sources */,
 				7F781BE22C8C34A20090E225 /* QuizView.swift in Sources */,
+				7FE892DB2C91F17D005B4FC8 /* TrainTroopsViewModifiers.swift in Sources */,
 				7FBC62B62C8DBE8D004AB1E0 /* MathView.swift in Sources */,
+				7FE892DD2C91F1B6005B4FC8 /* TrainTroopsViewExtensions.swift in Sources */,
+				7FE892E52C91F445005B4FC8 /* VocabViewModel.swift in Sources */,
 				7F46266A2C90983D00DDB4C3 /* TrainTroopsView.swift in Sources */,
+				7FE892D92C91F154005B4FC8 /* VocabViewExtensions.swift in Sources */,
 				E813C7622C7A0E6A00167B49 /* HomePageView.swift in Sources */,
 				E813C7482C79A24900167B49 /* RegisterViewViewModifiers.swift in Sources */,
 				7FEB39D72C8C5387006166DE /* HomeViewExtensions.swift in Sources */,

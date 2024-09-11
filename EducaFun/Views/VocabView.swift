@@ -9,8 +9,7 @@ import SwiftUI
 
 struct VocabView: View {
     @Binding var isPresented: Bool  // Binding to control presentation
-    @State var options = ["A", "B", "C", "D"]
-
+    @StateObject var vocabvw = VocabViewModel()
     var body: some View {
         ZStack{
 
@@ -83,7 +82,7 @@ struct VocabView: View {
                             Button{
                                 
                             }label:{
-                                Text(options[number])
+                                Text(vocabvw.optionsvocab[number])
                                     .answerpadded()
                                 
                             }
@@ -109,35 +108,7 @@ struct VocabView: View {
     VocabView(isPresented: .constant(false))
 }
 
-struct vocabhighlight: ViewModifier{
-    func body (content: Content) -> some View{
-        content
-            .padding(.leading, 10)
-            .padding(.trailing, 10)
-            .background(Color(customviolet).opacity(0.5))
-            .clipShape(.capsule)
-            .font(.system(size: 19))
-            .padding(.bottom, 405)
-            .font(.system(size: 20))
-        
-    }
-}
 
-extension View{
-  func vocabhighlighted() -> some View{
-      modifier(vocabhighlight())
-  }
-}
-struct vocabTimertext: View{
-    var text:String
-    var body: some View{
-        Text(text)
-            .font(.system(size: 14))
-            .bold()
-            .padding()
-            .foregroundStyle(.black)
-            .background(Color(customviolet).opacity(0.5))
-            .clipShape(.rect(cornerRadius: 20))
-        
-        }
-}
+
+
+
