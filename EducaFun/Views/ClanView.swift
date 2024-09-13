@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ClanView: View {
-    let Clannames = ["0", "A", "Bdsf", "Cdsg", "D", "Eian", "A", "B", "C", "D", "Ebra"]
+   @StateObject var clanvw = ClanViewModel()
     var body: some View {
         NavigationStack{
             ZStack{
@@ -37,7 +37,7 @@ struct ClanView: View {
                         
                         ScrollView{
                             //Enter the Clan Name
-                            ForEach(0..<Clannames.count){
+                            ForEach(0..<clanvw.Clannames.count){
                                 number in
                                 VStack{
                                     HStack(){
@@ -46,7 +46,7 @@ struct ClanView: View {
                                                 Text("\(number+1).")
                                                     .bold()
                                                     .padding()
-                                                Text("\(Clannames[number])" )
+                                                Text("\(clanvw.Clannames[number])" )
                                                     .bold()
                                                 Spacer()
                                             }

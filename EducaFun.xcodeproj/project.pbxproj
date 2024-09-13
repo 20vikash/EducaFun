@@ -27,6 +27,7 @@
 		7FDB004A2C940AC100A03E87 /* RoboticsLabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDB00492C940AC100A03E87 /* RoboticsLabView.swift */; };
 		7FDB004C2C940F5500A03E87 /* AbstractLabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDB004B2C940F5500A03E87 /* AbstractLabView.swift */; };
 		7FDB004E2C941E4800A03E87 /* EnvironmentLabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDB004D2C941E4800A03E87 /* EnvironmentLabView.swift */; };
+		7FDB00502C943D4800A03E87 /* GlobalChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDB004F2C943D4800A03E87 /* GlobalChatView.swift */; };
 		7FE892C72C91C8AD005B4FC8 /* MathTrainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE892C62C91C8AD005B4FC8 /* MathTrainView.swift */; };
 		7FE892C92C91C8CC005B4FC8 /* VocabTrainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE892C82C91C8CC005B4FC8 /* VocabTrainView.swift */; };
 		7FE892CB2C91EFF1005B4FC8 /* VocabTrainViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE892CA2C91EFF1005B4FC8 /* VocabTrainViewModifiers.swift */; };
@@ -91,6 +92,7 @@
 		7FDB00492C940AC100A03E87 /* RoboticsLabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoboticsLabView.swift; sourceTree = "<group>"; };
 		7FDB004B2C940F5500A03E87 /* AbstractLabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractLabView.swift; sourceTree = "<group>"; };
 		7FDB004D2C941E4800A03E87 /* EnvironmentLabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentLabView.swift; sourceTree = "<group>"; };
+		7FDB004F2C943D4800A03E87 /* GlobalChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalChatView.swift; sourceTree = "<group>"; };
 		7FE892C62C91C8AD005B4FC8 /* MathTrainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathTrainView.swift; sourceTree = "<group>"; };
 		7FE892C82C91C8CC005B4FC8 /* VocabTrainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabTrainView.swift; sourceTree = "<group>"; };
 		7FE892CA2C91EFF1005B4FC8 /* VocabTrainViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabTrainViewModifiers.swift; sourceTree = "<group>"; };
@@ -196,6 +198,7 @@
 				E813C7612C7A0E6A00167B49 /* HomePageView.swift */,
 				7F4626692C90983D00DDB4C3 /* TrainTroopsView.swift */,
 				7F46266B2C909A1100DDB4C3 /* ChatView.swift */,
+				7FDB004F2C943D4800A03E87 /* GlobalChatView.swift */,
 				7FE892C82C91C8CC005B4FC8 /* VocabTrainView.swift */,
 				7FE892C62C91C8AD005B4FC8 /* MathTrainView.swift */,
 				7F781BE52C8C34DB0090E225 /* EducaAIView.swift */,
@@ -408,6 +411,7 @@
 				7F7654D62C8F34180080E3CA /* QuizViewModifiers.swift in Sources */,
 				E813C75C2C79F63600167B49 /* TestView.swift in Sources */,
 				7FE892E32C91F3B7005B4FC8 /* MathViewModel.swift in Sources */,
+				7FDB00502C943D4800A03E87 /* GlobalChatView.swift in Sources */,
 				7FE892D32C91F0CB005B4FC8 /* MathTrainViewExtensions.swift in Sources */,
 				E813C75E2C79F8E100167B49 /* ContentViewViewModel.swift in Sources */,
 				7FEB39D52C8C5290006166DE /* HomeViewModifiers.swift in Sources */,

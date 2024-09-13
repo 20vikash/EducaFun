@@ -8,6 +8,7 @@
 import SwiftUI
 
 class ClanViewModel: ObservableObject{
+    @Published var Clannames = ["0", "A", "Bdsf", "Cdsg", "D", "Eian", "A", "B", "C", "D", "Ebra"]
     init(){
         
     }
