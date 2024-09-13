@@ -32,7 +32,7 @@ struct ChatView: View {
                             .padding(.bottom, 650)
                         Text("Team Members")
                             .bold()
-                            .font(.system(size: 15))
+                            .font(.system(size: 18))
                             .padding(.bottom, 590)
                     }
                 }

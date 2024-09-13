@@ -21,21 +21,26 @@ struct GlobalChatView: View {
             .ignoresSafeArea()
             Rectangle()
                 .fill(Color.white.opacity(0.4))
-                .frame(width:370, height: 800)
+                .frame(width:370, height: 750)
                 .cornerRadius(30)
                 .padding(.horizontal, 5)
             VStack(spacing: 15) {
                 // Title
-                VStack(spacing: -5){
-                    Text("Clan Chat")
-                        .bold()
-                        .font(.system(size: 40))
-                    
+                VStack(spacing: -20){
+                    ZStack{
+                        Image("sword")
+                            .resizable()
+                            .frame(width: 150, height: 150)
+                        Text("Clan Chat")
+                            .bold()
+                            .font(.system(size: 40))
+                    }
                     // Subtitle
                     Text("Form Strategies to Win!")
                         .bold()
                         .font(.system(size: 13))
                         .padding(.top, 12)
+                        
                 }
                 // Message List
                 ScrollView {
@@ -81,10 +86,10 @@ struct GlobalChatView: View {
                     HStack {
                         // TextEditor for typing a message
                         TextEditor(text: $message)
-                            .frame(height: 50)  // Restrict height of the editor
+                            .frame(height: 40)  // Restrict height of the editor
                             .padding()
                             .background(Color.white)
-                            .cornerRadius(20)
+                            .cornerRadius(100)
                         
                         // Send Button
                         Button(action: {
@@ -97,9 +102,12 @@ struct GlobalChatView: View {
                         }
                     }
                     .padding()
+                    .chatpadded()
+                    .padding(.bottom, 10)
+                    
                 }
             }
-            .padding(.top)
+            .padding(.top, -10)
         }
     }
     
@@ -114,4 +122,22 @@ struct GlobalChatView: View {
 
 #Preview {
     GlobalChatView()
+}
+
+struct chatpad: ViewModifier{
+   func body (content: Content) -> some View{
+       content
+           .font(.system(size: 15))
+           .frame(width:330, height:60)
+           .background(Color.white)
+           .clipShape(.rect(cornerRadius: 65))
+           .shadow(radius: 0.5)
+           
+       }
+}
+
+extension View{
+  func chatpadded() -> some View{
+      self.modifier(chatpad())
+  }
 }

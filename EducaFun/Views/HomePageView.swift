@@ -35,9 +35,13 @@ struct HomePageView: View{
                                 .font(.system(size: 35))
                                 .frame(width: 200, height: 170)
                                 .padding()
-                            Image(systemName: "person")
-                                .padding(.bottom, 110)
-                                .padding(.leading, -80)
+                            Button{
+                                //Logout
+                            }label: {
+                                Image(systemName: "rectangle.portrait.and.arrow.right")
+                                    .padding(.bottom, 110)
+                                    .padding(.leading, -80)
+                            }
                         }
                         //Image
                         Image("\(homevm.userimg)")
@@ -76,7 +80,7 @@ struct HomePageView: View{
                             .highlighted()
                             .padding(.leading, 20)
                         VStack(spacing:-50){
-                            HStack(spacing:-35){
+                            HStack(spacing: -35){
                                 ForEach (0..<2){ number
                                     in
                                     NavigationLink(destination:destinations[number]){
