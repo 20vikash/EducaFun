@@ -22,6 +22,11 @@
 		7F781BE62C8C34DB0090E225 /* EducaAIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F781BE52C8C34DB0090E225 /* EducaAIView.swift */; };
 		7F945E912C8CA4200081245F /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F945E902C8CA4200081245F /* HomeViewModel.swift */; };
 		7FBC62B62C8DBE8D004AB1E0 /* MathView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBC62B52C8DBE8D004AB1E0 /* MathView.swift */; };
+		7FDB00442C93F54000A03E87 /* SplineRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = 7FDB00432C93F54000A03E87 /* SplineRuntime */; };
+		7FDB00462C94011400A03E87 /* BioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDB00452C94011400A03E87 /* BioView.swift */; };
+		7FDB004A2C940AC100A03E87 /* RoboticsLabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDB00492C940AC100A03E87 /* RoboticsLabView.swift */; };
+		7FDB004C2C940F5500A03E87 /* AbstractLabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDB004B2C940F5500A03E87 /* AbstractLabView.swift */; };
+		7FDB004E2C941E4800A03E87 /* EnvironmentLabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDB004D2C941E4800A03E87 /* EnvironmentLabView.swift */; };
 		7FE892C72C91C8AD005B4FC8 /* MathTrainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE892C62C91C8AD005B4FC8 /* MathTrainView.swift */; };
 		7FE892C92C91C8CC005B4FC8 /* VocabTrainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE892C82C91C8CC005B4FC8 /* VocabTrainView.swift */; };
 		7FE892CB2C91EFF1005B4FC8 /* VocabTrainViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE892CA2C91EFF1005B4FC8 /* VocabTrainViewModifiers.swift */; };
@@ -82,6 +87,10 @@
 		7F781BE52C8C34DB0090E225 /* EducaAIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducaAIView.swift; sourceTree = "<group>"; };
 		7F945E902C8CA4200081245F /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		7FBC62B52C8DBE8D004AB1E0 /* MathView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathView.swift; sourceTree = "<group>"; };
+		7FDB00452C94011400A03E87 /* BioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioView.swift; sourceTree = "<group>"; };
+		7FDB00492C940AC100A03E87 /* RoboticsLabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoboticsLabView.swift; sourceTree = "<group>"; };
+		7FDB004B2C940F5500A03E87 /* AbstractLabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractLabView.swift; sourceTree = "<group>"; };
+		7FDB004D2C941E4800A03E87 /* EnvironmentLabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentLabView.swift; sourceTree = "<group>"; };
 		7FE892C62C91C8AD005B4FC8 /* MathTrainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathTrainView.swift; sourceTree = "<group>"; };
 		7FE892C82C91C8CC005B4FC8 /* VocabTrainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabTrainView.swift; sourceTree = "<group>"; };
 		7FE892CA2C91EFF1005B4FC8 /* VocabTrainViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabTrainViewModifiers.swift; sourceTree = "<group>"; };
@@ -129,6 +138,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FDB00442C93F54000A03E87 /* SplineRuntime in Frameworks */,
 				E813C7562C79D30900167B49 /* KeychainSwift in Frameworks */,
 				E813C7652C7AE84400167B49 /* AlertToast in Frameworks */,
 				E813C7C02C90A9AD00167B49 /* SocketIO in Frameworks */,
@@ -194,6 +204,10 @@
 				7FBC62B52C8DBE8D004AB1E0 /* MathView.swift */,
 				7F7654D32C8F1AAB0080E3CA /* VocabView.swift */,
 				7F781BDF2C8C325F0090E225 /* FunLabView.swift */,
+				7FDB004D2C941E4800A03E87 /* EnvironmentLabView.swift */,
+				7FDB00492C940AC100A03E87 /* RoboticsLabView.swift */,
+				7FDB004B2C940F5500A03E87 /* AbstractLabView.swift */,
+				7FDB00452C94011400A03E87 /* BioView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -307,6 +321,7 @@
 				E813C7552C79D30900167B49 /* KeychainSwift */,
 				E813C7642C7AE84400167B49 /* AlertToast */,
 				E813C7BF2C90A9AD00167B49 /* SocketIO */,
+				7FDB00432C93F54000A03E87 /* SplineRuntime */,
 			);
 			productName = EducaFun;
 			productReference = E813C7232C77853E00167B49 /* EducaFun.app */;
@@ -340,6 +355,7 @@
 				E813C7542C79D30900167B49 /* XCRemoteSwiftPackageReference "keychain-swift" */,
 				E813C7632C7AE84400167B49 /* XCRemoteSwiftPackageReference "AlertToast" */,
 				E813C7BE2C90A9AD00167B49 /* XCRemoteSwiftPackageReference "socket.io-client-swift" */,
+				7FDB00422C93F54000A03E87 /* XCRemoteSwiftPackageReference "spline-ios" */,
 			);
 			productRefGroup = E813C7242C77853E00167B49 /* Products */;
 			projectDirPath = "";
@@ -369,6 +385,8 @@
 			files = (
 				E813C7582C79DF4200167B49 /* KeychainManager.swift in Sources */,
 				7FE892CF2C91F061005B4FC8 /* MathViewModifiers.swift in Sources */,
+				7FDB004E2C941E4800A03E87 /* EnvironmentLabView.swift in Sources */,
+				7FDB004A2C940AC100A03E87 /* RoboticsLabView.swift in Sources */,
 				7FE892CB2C91EFF1005B4FC8 /* VocabTrainViewModifiers.swift in Sources */,
 				E813C74C2C79A28600167B49 /* RegisterViewViewModel.swift in Sources */,
 				E813C7292C77853E00167B49 /* ContentView.swift in Sources */,
@@ -409,7 +427,9 @@
 				7F4626742C90A4A600DDB4C3 /* ClanViewModel.swift in Sources */,
 				7FE892D52C91F0F8005B4FC8 /* MathViewExtensions.swift in Sources */,
 				E813C75A2C79E63800167B49 /* SessionModel.swift in Sources */,
+				7FDB00462C94011400A03E87 /* BioView.swift in Sources */,
 				7F781BE22C8C34A20090E225 /* QuizView.swift in Sources */,
+				7FDB004C2C940F5500A03E87 /* AbstractLabView.swift in Sources */,
 				7FE892DB2C91F17D005B4FC8 /* TrainTroopsViewModifiers.swift in Sources */,
 				7FBC62B62C8DBE8D004AB1E0 /* MathView.swift in Sources */,
 				7FE892DD2C91F1B6005B4FC8 /* TrainTroopsViewExtensions.swift in Sources */,
@@ -624,6 +644,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		7FDB00422C93F54000A03E87 /* XCRemoteSwiftPackageReference "spline-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/splinetool/spline-ios";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		E813C7542C79D30900167B49 /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/evgenyneu/keychain-swift.git";
@@ -651,6 +679,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		7FDB00432C93F54000A03E87 /* SplineRuntime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7FDB00422C93F54000A03E87 /* XCRemoteSwiftPackageReference "spline-ios" */;
+			productName = SplineRuntime;
+		};
 		E813C7552C79D30900167B49 /* KeychainSwift */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = E813C7542C79D30900167B49 /* XCRemoteSwiftPackageReference "keychain-swift" */;
