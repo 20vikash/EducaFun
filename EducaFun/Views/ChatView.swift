@@ -11,74 +11,76 @@ struct ChatView: View {
     let memb = ["1", "2", "3", "4", "5", "6"]
     @StateObject var clanvw = ClanViewModel()
     var body: some View {
-        ZStack{
-            RadialGradient(stops: [
-                .init(color: Color(red: 0.9, green: 0.8, blue: 0.7), location: 0.01),
-                .init(color: Color(red: 0.6, green: 0.3, blue: 0.1), location: 0.3),
-            ], center: .center, startRadius: 100, endRadius: 1000)
-            
-            .ignoresSafeArea()
-            
-            VStack{
-                ZStack{
-                    Image("sword")
-                        .resizable()
-                        .frame(width: 300, height: 300)
-                        .padding(.bottom, 530)
-                    Text("Clash of Clans")
-                        .bold()
-                        .font(.system(size: 35))
-                        .padding(.bottom, 650)
-                    Text("Team Members")
-                        .bold()
-                        .font(.system(size: 15))
-                        .padding(.bottom, 590)
+        NavigationStack{
+            ZStack{
+                RadialGradient(stops: [
+                    .init(color: Color(red: 0.9, green: 0.8, blue: 0.7), location: 0.01),
+                    .init(color: Color(red: 0.6, green: 0.3, blue: 0.1), location: 0.3),
+                ], center: .center, startRadius: 100, endRadius: 1000)
+                
+                .ignoresSafeArea()
+                
+                VStack{
+                    ZStack{
+                        Image("sword")
+                            .resizable()
+                            .frame(width: 300, height: 300)
+                            .padding(.bottom, 530)
+                        Text("Clash of Clans")
+                            .bold()
+                            .font(.system(size: 35))
+                            .padding(.bottom, 650)
+                        Text("Team Members")
+                            .bold()
+                            .font(.system(size: 15))
+                            .padding(.bottom, 590)
+                    }
                 }
-            }
-            VStack{
-                Text("")
-                    .padding(.top, 20)
-                ScrollView{
-                    //Enter the Clan Name
-                    ForEach(0..<memb.count){
-                        number in
-                        VStack{
-                            HStack(){
-                                ZStack{
-                                    HStack(){
-                                        Text("\(number+1).")
-                                            .bold()
-                                            .padding()
-                                        Text("\(memb[number])" )
-                                            .bold()
-                                        Spacer()
+                VStack{
+                    Text("")
+                        .padding(.top, 20)
+                    ScrollView{
+                        //Enter the Clan Name
+                        ForEach(0..<memb.count){
+                            number in
+                            VStack{
+                                HStack(){
+                                    ZStack{
+                                        HStack(){
+                                            Text("\(number+1).")
+                                                .bold()
+                                                .padding()
+                                            Text("\(memb[number])" )
+                                                .bold()
+                                            Spacer()
+                                        }
+                                        scoreText(text: "2000XP")
+                                            .padding(.leading, 200)
                                     }
-                                    scoreText(text: "2000XP")
-                                        .padding(.leading, 200)
+                                    .clanmembpadded()
                                 }
-                                .clanmembpadded()
+                                
                             }
-                            
                         }
                     }
                 }
-            }
-            .frame(maxWidth :350, maxHeight: 470)
-            .background(.gray.opacity(0.3))
-            .clipShape(.rect(cornerRadius: 90))
-            .padding(.horizontal)
-            .padding(.top, 80)
-            
-            VStack{
-                NavigationLink(destination:  GlobalChatView()){
-                    
-                    Text("Let's Chat")
-                        .chatbuttoned()
+                .frame(maxWidth :350, maxHeight: 470)
+                .background(.gray.opacity(0.3))
+                .clipShape(.rect(cornerRadius: 90))
+                .padding(.horizontal)
+                .padding(.top, 80)
+                
+                VStack{
+                    NavigationLink(destination:  GlobalChatView()){
+                        
+                        Text("Let's Chat")
+                            .chatbuttoned()
+                    }
                 }
+                .padding(.top, 650)
             }
-            .padding(.top, 650)
         }
-        }
+    }
     }
 
 #Preview {
