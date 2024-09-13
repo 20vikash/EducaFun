@@ -40,7 +40,7 @@ import SwiftUI
 struct onbio: View {
     var body: some View {
         // fetching from cloud
-        let url = URL(string: "https://build.spline.design/9AhqLSwnovRQt3Eo68xJ/scene.splineswift")!
+        let url = URL(string: "https://build.spline.design/oY61Ye1zAKWa4G76fbVS/scene.splineswift")!
 
         // fetching from local
         // let url = Bundle.main.url(forResource: "scene", withExtension: "splineswift")!
@@ -48,3 +48,5 @@ struct onbio: View {
         SplineView(sceneFileURL: url)
     }
 }
+
+

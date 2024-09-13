@@ -96,7 +96,7 @@ struct scoreText: View{
             .bold()
             .padding()
             .foregroundStyle(.black)
-            .background(Color(.brown).opacity(0.8))
+            .background(Color(.brown).opacity(0.6))
             .clipShape(.rect(cornerRadius: 20))
         
         }
